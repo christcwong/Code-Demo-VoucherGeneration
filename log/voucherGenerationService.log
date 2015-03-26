@@ -1,0 +1,535 @@
+26/06/2014 4:59:17 AM 
+26/06/2014 4:59:17 AM [34] Start to Process Voucher Generation Request
+26/06/2014 4:59:17 AM [34] ID found
+26/06/2014 4:59:17 AM [34] CSV File Found and Header is valid...
+26/06/2014 4:59:18 AM [34] All vouchers Generated
+26/06/2014 4:59:18 AM [34] Zipping Vouchers...
+26/06/2014 4:59:19 AM [34] Completed
+26/06/2014 6:02:13 AM 
+26/06/2014 6:02:13 AM [36] Start to Process Voucher Generation Request
+26/06/2014 6:02:13 AM [36] ID found
+26/06/2014 6:02:13 AM [36] CSV File Found and Header is valid...
+26/06/2014 6:02:14 AM [36] All vouchers Generated
+26/06/2014 6:02:14 AM [36] Zipping Vouchers...
+26/06/2014 6:02:15 AM [36] Completed
+26/06/2014 6:38:41 AM 
+26/06/2014 6:38:41 AM [35] Start to Process Voucher Generation Request
+26/06/2014 6:38:41 AM [35] ID found
+26/06/2014 6:38:41 AM [35] CSV File Found and Header is valid...
+26/06/2014 6:38:42 AM [35] All vouchers Generated
+26/06/2014 6:38:42 AM [35] Zipping Vouchers...
+26/06/2014 6:38:43 AM [35] Completed
+26/06/2014 6:56:35 AM 
+26/06/2014 6:56:35 AM [33] Start to Process Voucher Generation Request
+26/06/2014 6:56:35 AM [33] ID found
+26/06/2014 6:56:35 AM [33] CSV File Found and Header is valid...
+26/06/2014 6:56:36 AM [33] All vouchers Generated
+26/06/2014 6:56:36 AM [33] Zipping Vouchers...
+26/06/2014 6:56:37 AM [33] Completed
+26/06/2014 7:10:40 AM 
+26/06/2014 7:10:40 AM [33] Start to Process Voucher Generation Request
+26/06/2014 7:10:40 AM [33] ID found
+26/06/2014 7:10:40 AM [33] CSV File Found and Header is valid...
+26/06/2014 7:10:41 AM [33] All vouchers Generated
+26/06/2014 7:10:41 AM [33] Zipping Vouchers...
+26/06/2014 7:10:42 AM [33] Completed
+27/06/2014 12:19:38 AM 
+27/06/2014 12:19:38 AM [37] Start to Process Voucher Generation Request
+27/06/2014 12:19:38 AM [37] ID found
+27/06/2014 12:19:38 AM [37] CSV File Found and Header is valid...
+27/06/2014 12:19:39 AM [37] All vouchers Generated
+27/06/2014 12:19:39 AM [37] Zipping Vouchers...
+27/06/2014 12:19:40 AM [37] Completed
+27/06/2014 12:23:13 AM 
+27/06/2014 12:23:15 AM [38] Start to Process Voucher Generation Request
+27/06/2014 12:23:15 AM [38] ID found
+27/06/2014 12:23:15 AM [38] Error - CSV File Not Found
+27/06/2014 12:23:15 AM [38] Process Stopped
+27/06/2014 1:56:33 AM 
+27/06/2014 1:56:33 AM [39] Start to Process Voucher Generation Request
+27/06/2014 1:56:33 AM [39] ID found
+27/06/2014 1:56:33 AM [39] CSV File Found and Header is valid...
+27/06/2014 1:56:34 AM [39] All vouchers Generated
+27/06/2014 1:56:34 AM [39] Zipping Vouchers...
+27/06/2014 1:56:35 AM [39] Completed
+27/06/2014 2:28:06 AM 
+27/06/2014 2:28:06 AM [40] Start to Process Voucher Generation Request
+27/06/2014 2:28:06 AM [40] ID found
+27/06/2014 2:28:07 AM [40] CSV File Found and Header is valid...
+27/06/2014 2:28:08 AM [40] All vouchers Generated
+27/06/2014 2:28:08 AM [40] Zipping Vouchers...
+27/06/2014 2:28:09 AM [40] Completed
+27/06/2014 2:31:10 AM 
+27/06/2014 2:31:11 AM [39] Start to Process Voucher Generation Request
+27/06/2014 2:31:12 AM [39] ID found
+27/06/2014 2:31:13 AM [39] CSV File Found and Header is valid...
+27/06/2014 2:31:14 AM [39] All vouchers Generated
+27/06/2014 2:31:14 AM [39] Zipping Vouchers...
+27/06/2014 2:31:14 AM [39] Completed
+27/06/2014 2:38:04 AM 
+27/06/2014 2:38:04 AM [41] Start to Process Voucher Generation Request
+27/06/2014 2:38:04 AM [41] ID found
+27/06/2014 2:38:04 AM [41] CSV File Found and Header is valid...
+27/06/2014 2:38:05 AM [41] All vouchers Generated
+27/06/2014 2:38:05 AM [41] Zipping Vouchers...
+27/06/2014 2:38:07 AM [41] Completed
+27/06/2014 3:18:52 AM [1997] My test AsynchronousMethod is being invoked : Chris I waited for 1000
+27/06/2014 7:35:53 AM [1997] My test AsynchronousMethod is being invoked : Chris I waited for 1000
+27/06/2014 7:36:00 AM [1997] My test AsynchronousMethod is being invoked : Chris I waited for 3000
+27/06/2014 7:36:07 AM [1997] My test AsynchronousMethod is being invoked : Chris I waited for 3000
+27/06/2014 7:41:36 AM [1997] My test AsynchronousMethod is being invoked : Chris I waited for 1000
+27/06/2014 7:41:40 AM [1997] My test AsynchronousMethod is being invoked : Chris I waited for 1000
+27/06/2014 7:41:43 AM [1997] My test AsynchronousMethod is being invoked : Chris I waited for 1000
+27/06/2014 7:41:51 AM 
+27/06/2014 7:41:51 AM [42] Start to Process Voucher Generation Request
+27/06/2014 7:41:51 AM [42] ID found
+27/06/2014 7:41:51 AM [42] CSV File Found and Header is valid...
+27/06/2014 7:41:53 AM [42] All vouchers Generated
+27/06/2014 7:41:53 AM [42] Zipping Vouchers...
+27/06/2014 7:41:53 AM [42] Completed
+27/06/2014 7:42:54 AM 
+27/06/2014 7:42:54 AM [43] Start to Process Voucher Generation Request
+27/06/2014 7:42:54 AM [43] ID found
+27/06/2014 7:42:55 AM [43] CSV File Found and Header is valid...
+27/06/2014 7:42:55 AM [43] All vouchers Generated
+27/06/2014 7:42:55 AM [43] Zipping Vouchers...
+27/06/2014 7:42:56 AM [43] Completed
+27/06/2014 7:46:44 AM 
+27/06/2014 7:46:44 AM [44] Start to Process Voucher Generation Request
+27/06/2014 7:46:44 AM [44] ID found
+27/06/2014 7:46:44 AM [44] CSV File Found and Header is valid...
+27/06/2014 7:46:47 AM [44] All vouchers Generated
+27/06/2014 7:46:47 AM [44] Zipping Vouchers...
+27/06/2014 7:46:48 AM [44] Completed
+30/06/2014 1:25:28 AM 
+30/06/2014 1:25:28 AM [45] Start to Process Voucher Generation Request
+30/06/2014 1:25:28 AM [45] ID found
+30/06/2014 1:25:28 AM [45] CSV File Found and Header is valid...
+30/06/2014 1:26:12 AM [45] All vouchers Generated
+30/06/2014 1:26:12 AM [45] Zipping Vouchers...
+30/06/2014 1:26:30 AM [45] Completed
+30/06/2014 1:31:54 AM [1997] My test AsynchronousMethod is being invoked : Chris I waited for 1000
+30/06/2014 1:32:04 AM [1997] My test AsynchronousMethod is being invoked : Chris I waited for 30000
+30/06/2014 1:32:50 AM [1997] My test AsynchronousMethod is being invoked : Chris I waited for 30000
+30/06/2014 1:37:57 AM [1997] My test AsynchronousMethod is being invoked : Chris I waited for 30000
+30/06/2014 1:38:49 AM 
+30/06/2014 1:38:49 AM [46] Start to Process Voucher Generation Request
+30/06/2014 1:38:49 AM [46] ID found
+30/06/2014 1:38:49 AM [46] CSV File Found and Header is valid...
+30/06/2014 1:38:51 AM [46] All vouchers Generated
+30/06/2014 1:38:52 AM [46] Zipping Vouchers...
+30/06/2014 1:38:54 AM [46] Completed
+30/06/2014 1:39:20 AM 
+30/06/2014 1:39:20 AM [47] Start to Process Voucher Generation Request
+30/06/2014 1:39:20 AM [47] ID found
+30/06/2014 1:39:21 AM [47] CSV File Found and Header is valid...
+30/06/2014 1:40:30 AM [47] All vouchers Generated
+30/06/2014 1:40:30 AM [47] Zipping Vouchers...
+30/06/2014 1:40:44 AM [47] Completed
+30/06/2014 1:42:22 AM [1997] My test AsynchronousMethod is being invoked : Chris I waited for 30000
+1/07/2014 12:55:21 AM 
+1/07/2014 12:55:21 AM [48] Start to Process Voucher Generation Request
+1/07/2014 12:55:21 AM [48] ID found
+1/07/2014 12:55:21 AM [48] CSV File Found and Header is valid...
+1/07/2014 12:55:24 AM [48] All vouchers Generated
+1/07/2014 12:55:24 AM [48] Zipping Vouchers...
+1/07/2014 12:55:24 AM [48] Completed
+1/07/2014 5:56:08 AM 
+1/07/2014 5:56:08 AM [49] Start to Process Voucher Generation Request
+1/07/2014 5:56:08 AM [49] ID found
+1/07/2014 5:56:08 AM [49] CSV File Found and Header is valid...
+1/07/2014 5:56:09 AM [49] All vouchers Generated
+1/07/2014 5:56:09 AM [49] Zipping Vouchers...
+1/07/2014 5:56:10 AM [49] Completed
+1/07/2014 5:56:20 AM 
+1/07/2014 5:56:20 AM [50] Start to Process Voucher Generation Request
+1/07/2014 5:56:20 AM [50] ID found
+1/07/2014 5:56:20 AM [50] CSV File Found and Header is valid...
+1/07/2014 5:56:21 AM [50] All vouchers Generated
+1/07/2014 5:56:21 AM [50] Zipping Vouchers...
+1/07/2014 5:56:21 AM [50] Completed
+1/07/2014 6:02:04 AM 
+1/07/2014 6:02:04 AM [51] Start to Process Voucher Generation Request
+1/07/2014 6:02:04 AM [51] ID found
+1/07/2014 6:02:04 AM [51] CSV File Found and Header is valid...
+1/07/2014 6:02:06 AM [51] All vouchers Generated
+1/07/2014 6:02:06 AM [51] Zipping Vouchers...
+1/07/2014 6:02:08 AM [51] Completed
+7/07/2014 3:27:21 AM [1997] My test AsynchronousMethod is being invoked : Chris I waited for 1000
+9/07/2014 12:20:41 AM 
+9/07/2014 12:20:41 AM [52] Start to Process Voucher Generation Request
+9/07/2014 12:20:41 AM [52] ID found
+9/07/2014 12:20:41 AM [52] CSV File Found and Header is valid...
+9/07/2014 12:20:45 AM [52] All vouchers Generated
+9/07/2014 12:20:45 AM [52] Zipping Vouchers...
+9/07/2014 12:20:45 AM [52] Completed
+17/07/2014 1:33:55 AM 
+17/07/2014 1:33:55 AM [53] Start to Process Voucher Generation Request
+17/07/2014 1:33:55 AM [53] ID found
+17/07/2014 1:33:55 AM [53] CSV File Found and Header is valid...
+17/07/2014 1:35:46 AM [53] All vouchers Generated
+17/07/2014 1:35:46 AM [53] Zipping Vouchers...
+17/07/2014 1:36:01 AM [53] Completed
+24/07/2014 3:17:17 AM 
+24/07/2014 3:17:17 AM [54] Start to Process Voucher Generation Request
+24/07/2014 3:17:18 AM [54] ID found
+24/07/2014 3:17:18 AM [54] CSV File Found and Header is valid...
+24/07/2014 3:17:19 AM System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 192.168.241.146:3128
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.WebClient.DownloadFile(Uri address, String fileName)
+   at System.Net.WebClient.DownloadFile(String address, String fileName)
+   at VoucherWebService.SaveVoucher(Int32 voucherTypeID, String code, String name, Int32 qrSize, String customerName, String email, String contact) in \\n5200-2\iis7_www\c\h\chinabarsignature.com\www\App_Code\VoucherWebService.vb:line 242
+   at VoucherWebService.ProcessVoucherGenerationRequest(Int32 intVoucherGenerationRequestId, Boolean blnSendEmail, Boolean blnQROnly) in \\n5200-2\iis7_www\c\h\chinabarsignature.com\www\App_Code\VoucherWebService.vb:line 164
+24/07/2014 3:22:15 AM 
+24/07/2014 3:22:15 AM [54] Start to Process Voucher Generation Request
+24/07/2014 3:22:15 AM [54] ID found
+24/07/2014 3:22:16 AM [54] CSV File Found and Header is valid...
+24/07/2014 3:22:17 AM System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 192.168.241.146:3128
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.WebClient.DownloadFile(Uri address, String fileName)
+   at System.Net.WebClient.DownloadFile(String address, String fileName)
+   at VoucherWebService.SaveVoucher(Int32 voucherTypeID, String code, String name, Int32 qrSize, String customerName, String email, String contact) in \\n5200-2\iis7_www\c\h\chinabarsignature.com\www\App_Code\VoucherWebService.vb:line 242
+   at VoucherWebService.ProcessVoucherGenerationRequest(Int32 intVoucherGenerationRequestId, Boolean blnSendEmail, Boolean blnQROnly) in \\n5200-2\iis7_www\c\h\chinabarsignature.com\www\App_Code\VoucherWebService.vb:line 164
+24/07/2014 3:26:22 AM 
+24/07/2014 3:26:22 AM [54] Start to Process Voucher Generation Request
+24/07/2014 3:26:22 AM [54] ID found
+24/07/2014 3:26:22 AM [54] CSV File Found and Header is valid...
+24/07/2014 3:26:24 AM System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 192.168.241.146:3128
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.WebClient.DownloadFile(Uri address, String fileName)
+   at System.Net.WebClient.DownloadFile(String address, String fileName)
+   at VoucherWebService.SaveVoucher(Int32 voucherTypeID, String code, String name, Int32 qrSize, String customerName, String email, String contact) in \\n5200-2\iis7_www\c\h\chinabarsignature.com\www\App_Code\VoucherWebService.vb:line 242
+   at VoucherWebService.ProcessVoucherGenerationRequest(Int32 intVoucherGenerationRequestId, Boolean blnSendEmail, Boolean blnQROnly) in \\n5200-2\iis7_www\c\h\chinabarsignature.com\www\App_Code\VoucherWebService.vb:line 164
+24/07/2014 6:12:01 AM 
+24/07/2014 6:12:01 AM [56] Start to Process Voucher Generation Request
+24/07/2014 6:12:01 AM [56] ID found
+24/07/2014 6:12:01 AM [56] CSV File Found and Header is valid...
+24/07/2014 6:12:03 AM System.NullReferenceException: Object reference not set to an instance of an object.
+   at VoucherWebService.SaveVoucher(Int32 voucherTypeID, String code, String name, Int32 qrSize, String customerName, String email, String contact) in \\n5200-2\iis7_www\c\h\chinabarsignature.com\www\App_Code\VoucherWebService.vb:line 254
+   at VoucherWebService.ProcessVoucherGenerationRequest(Int32 intVoucherGenerationRequestId, Boolean blnSendEmail, Boolean blnQROnly) in \\n5200-2\iis7_www\c\h\chinabarsignature.com\www\App_Code\VoucherWebService.vb:line 164
+24/07/2014 6:36:15 AM 
+24/07/2014 6:36:15 AM [56] Start to Process Voucher Generation Request
+24/07/2014 6:36:15 AM [56] ID found
+24/07/2014 6:36:15 AM [56] CSV File Found and Header is valid...
+24/07/2014 6:36:16 AM System.InvalidOperationException: Nullable object must have a value.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Nullable`1.op_Explicit(Nullable`1 value)
+   at VoucherWebService.SaveVoucher(Int32 voucherTypeID, String code, String name, Int32 qrSize, String customerName, String email, String contact) in \\n5200-2\iis7_www\c\h\chinabarsignature.com\www\App_Code\VoucherWebService.vb:line 294
+   at VoucherWebService.ProcessVoucherGenerationRequest(Int32 intVoucherGenerationRequestId, Boolean blnSendEmail, Boolean blnQROnly) in \\n5200-2\iis7_www\c\h\chinabarsignature.com\www\App_Code\VoucherWebService.vb:line 166
+24/07/2014 6:58:29 AM 
+24/07/2014 6:58:29 AM [57] Start to Process Voucher Generation Request
+24/07/2014 6:58:30 AM [57] ID found
+24/07/2014 6:58:30 AM [57] CSV File Found and Header is valid...
+24/07/2014 6:58:30 AM [57] System.InvalidOperationException: Nullable object must have a value.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Nullable`1.op_Explicit(Nullable`1 value)
+   at VoucherWebService.SaveVoucher(Int32 voucherTypeID, String code, String name, Int32 qrSize, String customerName, String email, String contact) in \\n5200-2\iis7_www\c\h\chinabarsignature.com\www\App_Code\VoucherWebService.vb:line 294
+   at VoucherWebService.ProcessVoucherGenerationRequest(Int32 intVoucherGenerationRequestId, Boolean blnSendEmail, Boolean blnQROnly) in \\n5200-2\iis7_www\c\h\chinabarsignature.com\www\App_Code\VoucherWebService.vb:line 166
+24/07/2014 7:04:23 AM 
+24/07/2014 7:04:23 AM [57] Start to Process Voucher Generation Request
+24/07/2014 7:04:23 AM [57] ID found
+24/07/2014 7:04:23 AM [57] CSV File Found and Header is valid...
+24/07/2014 7:04:25 AM [57] System.InvalidOperationException: Nullable object must have a value.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Nullable`1.op_Explicit(Nullable`1 value)
+   at VoucherWebService.SaveVoucher(Int32 voucherTypeID, String code, String name, Int32 qrSize, String customerName, String email, String contact) in \\n5200-2\iis7_www\c\h\chinabarsignature.com\www\App_Code\VoucherWebService.vb:line 294
+   at VoucherWebService.ProcessVoucherGenerationRequest(Int32 intVoucherGenerationRequestId, Boolean blnSendEmail, Boolean blnQROnly) in \\n5200-2\iis7_www\c\h\chinabarsignature.com\www\App_Code\VoucherWebService.vb:line 166
+24/07/2014 7:05:46 AM 
+24/07/2014 7:05:46 AM [58] Start to Process Voucher Generation Request
+24/07/2014 7:05:46 AM [58] ID found
+24/07/2014 7:05:46 AM [58] CSV File Found and Header is valid...
+24/07/2014 7:05:46 AM [58] All vouchers Generated
+24/07/2014 7:05:46 AM [58] Zipping Vouchers...
+24/07/2014 7:05:46 AM Deleting Generated Vouchers outside zip file...
+24/07/2014 7:05:47 AM [58] Completed
+31/07/2014 12:10:40 AM 
+31/07/2014 12:10:40 AM [59] Start to Process Voucher Generation Request
+31/07/2014 12:10:40 AM [59] ID found
+31/07/2014 12:10:40 AM [59] CSV File Found and Header is valid...
+31/07/2014 12:10:42 AM [59] All vouchers Generated
+31/07/2014 12:10:42 AM [59] Zipping Vouchers...
+31/07/2014 12:10:43 AM Deleting Generated Vouchers outside zip file...
+31/07/2014 12:10:43 AM [59] Completed
+1/08/2014 12:46:32 AM 
+1/08/2014 12:46:32 AM [60] Start to Process Voucher Generation Request
+1/08/2014 12:46:32 AM [60] ID found
+1/08/2014 12:46:32 AM [60] CSV File Found and Header is valid...
+1/08/2014 12:46:33 AM [60] All vouchers Generated
+1/08/2014 12:46:33 AM [60] Zipping Vouchers...
+1/08/2014 12:46:34 AM Deleting Generated Vouchers outside zip file...
+1/08/2014 12:46:34 AM [60] Completed
+11/08/2014 2:14:57 AM 
+11/08/2014 2:14:57 AM [61] Start to Process Voucher Generation Request
+11/08/2014 2:14:57 AM [61] ID found
+11/08/2014 2:14:57 AM [61] CSV File Found and Header is valid...
+11/08/2014 2:15:50 AM [61] All vouchers Generated
+11/08/2014 2:15:50 AM [61] Zipping Vouchers...
+11/08/2014 2:16:01 AM Deleting Generated Vouchers outside zip file...
+11/08/2014 2:16:01 AM [61] Completed
+15/08/2014 7:27:18 AM 
+15/08/2014 7:27:18 AM [62] Start to Process Voucher Generation Request
+15/08/2014 7:27:18 AM [62] ID found
+15/08/2014 7:27:18 AM [62] CSV File Found and Header is valid...
+15/08/2014 7:27:24 AM [62] All vouchers Generated
+15/08/2014 7:27:24 AM [62] Zipping Vouchers...
+15/08/2014 7:27:24 AM Deleting Generated Vouchers outside zip file...
+15/08/2014 7:27:24 AM [62] Completed
+26/08/2014 12:25:02 AM 
+26/08/2014 12:25:02 AM [63] Start to Process Voucher Generation Request
+26/08/2014 12:25:02 AM [63] ID found
+26/08/2014 12:25:02 AM [63] CSV File Found and Header is valid...
+26/08/2014 12:25:06 AM [63] System.Threading.ThreadAbortException: Thread was being aborted.
+   at SNIReadSyncOverAsync(SNI_ConnWrapper* , SNI_Packet** , Int32 )
+   at SNINativeMethodWrapper.SNIReadSyncOverAsync(SafeHandle pConn, IntPtr& packet, Int32 timeout)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__3[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.Any[TSource](IQueryable`1 source)
+   at VoucherWebService.ProcessVoucherGenerationRequest(Int32 intVoucherGenerationRequestId, Boolean blnSendEmail, Boolean blnQROnly) in \\n5200-2\iis7_www\c\h\chinabarsignature.com\www\App_Code\VoucherWebService.vb:line 144
+26/08/2014 1:06:03 AM 
+26/08/2014 1:06:03 AM [64] Start to Process Voucher Generation Request
+26/08/2014 1:06:04 AM [64] ID found
+26/08/2014 1:06:04 AM [64] CSV File Found and Header is valid...
+26/08/2014 1:08:28 AM [64] All vouchers Generated
+26/08/2014 1:08:29 AM [64] Zipping Vouchers...
+26/08/2014 1:08:49 AM Deleting Generated Vouchers outside zip file...
+26/08/2014 1:08:50 AM [64] Completed
+3/09/2014 12:18:12 AM 
+3/09/2014 12:18:12 AM [65] Start to Process Voucher Generation Request
+3/09/2014 12:18:12 AM [65] ID found
+3/09/2014 12:18:12 AM [65] CSV File Found and Header is valid...
+3/09/2014 12:18:15 AM [65] All vouchers Generated
+3/09/2014 12:18:15 AM [65] Zipping Vouchers...
+3/09/2014 12:18:16 AM Deleting Generated Vouchers outside zip file...
+3/09/2014 12:18:16 AM [65] Completed
+8/09/2014 5:20:49 AM 
+8/09/2014 5:20:49 AM [66] Start to Process Voucher Generation Request
+8/09/2014 5:20:49 AM [66] ID found
+8/09/2014 5:20:49 AM [66] CSV File Found and Header is valid...
+8/09/2014 5:20:52 AM [66] All vouchers Generated
+8/09/2014 5:20:52 AM [66] Zipping Vouchers...
+8/09/2014 5:20:53 AM Deleting Generated Vouchers outside zip file...
+8/09/2014 5:20:53 AM [66] Completed
+10/09/2014 5:43:46 AM 
+10/09/2014 5:43:46 AM [67] Start to Process Voucher Generation Request
+10/09/2014 5:43:46 AM [67] ID found
+10/09/2014 5:43:46 AM [67] CSV File Found and Header is valid...
+10/09/2014 5:43:48 AM [67] All vouchers Generated
+10/09/2014 5:43:48 AM [67] Zipping Vouchers...
+10/09/2014 5:43:48 AM Deleting Generated Vouchers outside zip file...
+10/09/2014 5:43:49 AM [67] Completed
+12/09/2014 2:20:10 AM 
+12/09/2014 2:20:10 AM [68] Start to Process Voucher Generation Request
+12/09/2014 2:20:10 AM [68] ID found
+12/09/2014 2:20:10 AM [68] CSV File Found and Header is valid...
+12/09/2014 2:20:11 AM [68] All vouchers Generated
+12/09/2014 2:20:11 AM [68] Zipping Vouchers...
+12/09/2014 2:20:12 AM Deleting Generated Vouchers outside zip file...
+12/09/2014 2:20:12 AM [68] Completed
+2/10/2014 6:08:51 AM 
+2/10/2014 6:08:51 AM [69] Start to Process Voucher Generation Request
+2/10/2014 6:08:51 AM [69] ID found
+2/10/2014 6:08:51 AM [69] CSV File Found and Header is valid...
+2/10/2014 6:08:53 AM [69] All vouchers Generated
+2/10/2014 6:08:53 AM [69] Zipping Vouchers...
+2/10/2014 6:08:55 AM Deleting Generated Vouchers outside zip file...
+2/10/2014 6:08:55 AM [69] Completed
+7/10/2014 5:10:41 AM 
+7/10/2014 5:10:41 AM [70] Start to Process Voucher Generation Request
+7/10/2014 5:10:41 AM [70] ID found
+7/10/2014 5:10:41 AM [70] CSV File Found and Header is valid...
+7/10/2014 5:10:44 AM [70] All vouchers Generated
+7/10/2014 5:10:44 AM [70] Zipping Vouchers...
+7/10/2014 5:10:44 AM Deleting Generated Vouchers outside zip file...
+7/10/2014 5:10:44 AM [70] Completed
+7/10/2014 5:10:52 AM 
+7/10/2014 5:10:52 AM [71] Start to Process Voucher Generation Request
+7/10/2014 5:10:52 AM [71] ID found
+7/10/2014 5:10:52 AM [71] CSV File Found and Header is valid...
+7/10/2014 5:10:55 AM [71] All vouchers Generated
+7/10/2014 5:10:55 AM [71] Zipping Vouchers...
+7/10/2014 5:10:55 AM Deleting Generated Vouchers outside zip file...
+7/10/2014 5:10:55 AM [71] Completed
+8/10/2014 6:08:07 AM 
+8/10/2014 6:08:07 AM [72] Start to Process Voucher Generation Request
+8/10/2014 6:08:07 AM [72] ID found
+8/10/2014 6:08:07 AM [72] CSV File Found and Header is valid...
+8/10/2014 6:08:08 AM [72] All vouchers Generated
+8/10/2014 6:08:08 AM [72] Zipping Vouchers...
+8/10/2014 6:08:09 AM Deleting Generated Vouchers outside zip file...
+8/10/2014 6:08:09 AM [72] Completed
+28/10/2014 5:09:27 AM 
+28/10/2014 5:09:27 AM [73] Start to Process Voucher Generation Request
+28/10/2014 5:09:27 AM [73] ID found
+28/10/2014 5:09:27 AM [73] CSV File Found and Header is valid...
+28/10/2014 5:09:29 AM [73] All vouchers Generated
+28/10/2014 5:09:29 AM [73] Zipping Vouchers...
+28/10/2014 5:09:30 AM Deleting Generated Vouchers outside zip file...
+28/10/2014 5:09:30 AM [73] Completed
+28/10/2014 5:09:50 AM 
+28/10/2014 5:09:50 AM [74] Start to Process Voucher Generation Request
+28/10/2014 5:09:50 AM [74] ID found
+28/10/2014 5:09:50 AM [74] CSV File Found and Header is valid...
+28/10/2014 5:09:51 AM [74] All vouchers Generated
+28/10/2014 5:09:51 AM [74] Zipping Vouchers...
+28/10/2014 5:09:52 AM Deleting Generated Vouchers outside zip file...
+28/10/2014 5:09:52 AM [74] Completed
+10/11/2014 4:02:43 AM 
+10/11/2014 4:02:43 AM [75] Start to Process Voucher Generation Request
+10/11/2014 4:02:43 AM [75] ID found
+10/11/2014 4:02:43 AM [75] CSV File Found and Header is valid...
+10/11/2014 4:02:45 AM [75] System.InvalidOperationException: Nullable object must have a value.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Nullable`1.op_Explicit(Nullable`1 value)
+   at VoucherWebService.ProcessVoucherGenerationRequest(Int32 intVoucherGenerationRequestId, Boolean blnSendEmail, Boolean blnQROnly) in \\n5200-2\iis7_www\c\h\chinabarsignature.com\www\App_Code\VoucherWebService.vb:line 150
+10/11/2014 4:10:09 AM 
+10/11/2014 4:10:09 AM [76] Start to Process Voucher Generation Request
+10/11/2014 4:10:09 AM [76] ID found
+10/11/2014 4:10:09 AM [76] CSV File Found and Header is valid...
+10/11/2014 4:10:11 AM [76] All vouchers Generated
+10/11/2014 4:10:12 AM [76] Zipping Vouchers...
+10/11/2014 4:10:20 AM Deleting Generated Vouchers outside zip file...
+10/11/2014 4:10:20 AM [76] Completed
+10/11/2014 4:25:32 AM 
+10/11/2014 4:25:32 AM [77] Start to Process Voucher Generation Request
+10/11/2014 4:25:32 AM [77] ID found
+10/11/2014 4:25:32 AM [77] CSV File Found and Header is valid...
+10/11/2014 4:25:46 AM [77] All vouchers Generated
+10/11/2014 4:25:46 AM [77] Zipping Vouchers...
+10/11/2014 4:25:49 AM Deleting Generated Vouchers outside zip file...
+10/11/2014 4:25:50 AM [77] Completed
+10/11/2014 4:45:50 AM 
+10/11/2014 4:45:50 AM [78] Start to Process Voucher Generation Request
+10/11/2014 4:45:50 AM [78] ID found
+10/11/2014 4:45:50 AM [78] CSV File Found and Header is valid...
+10/11/2014 4:46:14 AM [78] All vouchers Generated
+10/11/2014 4:46:14 AM [78] Zipping Vouchers...
+10/11/2014 4:46:19 AM Deleting Generated Vouchers outside zip file...
+10/11/2014 4:46:20 AM [78] Completed
+10/11/2014 5:28:30 AM 
+10/11/2014 5:28:30 AM [79] Start to Process Voucher Generation Request
+10/11/2014 5:28:30 AM [79] ID found
+10/11/2014 5:28:30 AM [79] CSV File Found and Header is valid...
+10/11/2014 5:30:05 AM [79] All vouchers Generated
+10/11/2014 5:30:07 AM [79] Zipping Vouchers...
+10/11/2014 5:30:28 AM Deleting Generated Vouchers outside zip file...
+10/11/2014 5:30:28 AM [79] Completed
+10/11/2014 6:38:27 AM 
+10/11/2014 6:38:27 AM [80] Start to Process Voucher Generation Request
+10/11/2014 6:38:27 AM [80] ID found
+10/11/2014 6:38:27 AM [80] CSV File Found and Header is valid...
+10/11/2014 6:38:44 AM [80] All vouchers Generated
+10/11/2014 6:38:45 AM [80] Zipping Vouchers...
+10/11/2014 6:38:47 AM Deleting Generated Vouchers outside zip file...
+10/11/2014 6:38:47 AM [80] Completed
+10/11/2014 11:57:42 PM 
+10/11/2014 11:57:42 PM [81] Start to Process Voucher Generation Request
+10/11/2014 11:57:42 PM [81] ID found
+10/11/2014 11:57:42 PM [81] CSV File Found and Header is valid...
+10/11/2014 11:57:50 PM 
+10/11/2014 11:57:50 PM [82] Start to Process Voucher Generation Request
+10/11/2014 11:57:50 PM [82] ID found
+10/11/2014 11:57:50 PM [82] CSV File Found and Header is valid...
+10/11/2014 11:58:05 PM [82] System.Net.WebException: An exception occurred during a WebClient request. ---> System.IO.IOException: The process cannot access the file '\\n5200-2\iis7_www\c\h\chinabarsignature.com\www\CustomerVoucherImage\TempQR3yCPxlZsGBavGL8LQU3oTg.jpg' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at System.Net.WebClient.DownloadFile(Uri address, String fileName)
+   --- End of inner exception stack trace ---
+   at System.Net.WebClient.DownloadFile(Uri address, String fileName)
+   at System.Net.WebClient.DownloadFile(String address, String fileName)
+   at VoucherWebService.SaveVoucher(Int32 voucherTypeID, String code, String name, Int32 qrSize, String customerName, String email, String contact) in \\n5200-2\iis7_www\c\h\chinabarsignature.com\www\App_Code\VoucherWebService.vb:line 269
+   at VoucherWebService.ProcessVoucherGenerationRequest(Int32 intVoucherGenerationRequestId, Boolean blnSendEmail, Boolean blnQROnly) in \\n5200-2\iis7_www\c\h\chinabarsignature.com\www\App_Code\VoucherWebService.vb:line 166
+10/11/2014 11:58:07 PM [81] All vouchers Generated
+10/11/2014 11:58:07 PM [81] Zipping Vouchers...
+10/11/2014 11:58:11 PM Deleting Generated Vouchers outside zip file...
+10/11/2014 11:58:12 PM [81] Completed
+10/11/2014 11:58:44 PM 
+10/11/2014 11:58:44 PM [83] Start to Process Voucher Generation Request
+10/11/2014 11:58:44 PM [83] ID found
+10/11/2014 11:58:44 PM [83] CSV File Found and Header is valid...
+10/11/2014 11:59:05 PM [83] All vouchers Generated
+10/11/2014 11:59:05 PM [83] Zipping Vouchers...
+10/11/2014 11:59:09 PM Deleting Generated Vouchers outside zip file...
+10/11/2014 11:59:09 PM [83] Completed
+28/11/2014 6:48:40 AM 
+28/11/2014 6:48:40 AM [84] Start to Process Voucher Generation Request
+28/11/2014 6:48:40 AM [84] ID found
+28/11/2014 6:48:40 AM [84] CSV File Found and Header is valid...
+28/11/2014 6:48:58 AM [84] All vouchers Generated
+28/11/2014 6:48:58 AM [84] Zipping Vouchers...
+28/11/2014 6:48:59 AM Deleting Generated Vouchers outside zip file...
+28/11/2014 6:48:59 AM [84] Completed
+9/12/2014 6:42:46 AM 
+9/12/2014 6:42:46 AM [85] Start to Process Voucher Generation Request
+9/12/2014 6:42:46 AM [85] ID found
+9/12/2014 6:42:46 AM [85] CSV File Found and Header is valid...
+9/12/2014 6:42:49 AM [85] All vouchers Generated
+9/12/2014 6:42:50 AM [85] Zipping Vouchers...
+9/12/2014 6:42:50 AM System.Threading.ThreadAbortException: Thread was being aborted.
+   at Ionic.Zip.ZipContainer.get_ParallelDeflateThreshold()
+   at Ionic.Zip.ZipEntry.MaybeApplyCompression(Stream s, Int64 streamLength)
+   at Ionic.Zip.ZipEntry._WriteEntryData(Stream s)
+   at Ionic.Zip.ZipEntry.Write(Stream s)
+   at Ionic.Zip.ZipFile.Save()
+   at Ionic.Zip.ZipFile.Save(String fileName)
+   at VoucherWebService.ProcessVoucherGenerationRequest(Int32 intVoucherGenerationRequestId, Boolean blnSendEmail, Boolean blnQROnly) in \\n5200-2\iis7_www\c\h\chinabarsignature.com\www\App_Code\VoucherWebService.vb:line 206
+9/12/2014 6:42:50 AM [85] System.Threading.ThreadAbortException: Thread was being aborted.
+   at VoucherWebService.ProcessVoucherGenerationRequest(Int32 intVoucherGenerationRequestId, Boolean blnSendEmail, Boolean blnQROnly) in \\n5200-2\iis7_www\c\h\chinabarsignature.com\www\App_Code\VoucherWebService.vb:line 216
+9/12/2014 6:49:51 AM 
+9/12/2014 6:49:51 AM [86] Start to Process Voucher Generation Request
+9/12/2014 6:49:51 AM [86] ID found
+9/12/2014 6:49:51 AM [86] CSV File Found and Header is valid...
+9/12/2014 6:49:54 AM [86] All vouchers Generated
+9/12/2014 6:49:54 AM [86] Zipping Vouchers...
+9/12/2014 6:49:55 AM Deleting Generated Vouchers outside zip file...
+9/12/2014 6:49:55 AM [86] Completed
+17/12/2014 3:36:22 AM 
+17/12/2014 3:36:22 AM [87] Start to Process Voucher Generation Request
+17/12/2014 3:36:22 AM [87] ID found
+17/12/2014 3:36:22 AM [87] CSV File Found and Header is valid...
+17/12/2014 3:36:56 AM [87] All vouchers Generated
+17/12/2014 3:37:27 AM [87] Zipping Vouchers...
+17/12/2014 3:37:36 AM Deleting Generated Vouchers outside zip file...
+17/12/2014 3:37:36 AM [87] Completed
+19/12/2014 3:37:52 AM 
+19/12/2014 3:37:52 AM [88] Start to Process Voucher Generation Request
+19/12/2014 3:37:52 AM [88] ID found
+19/12/2014 3:37:52 AM [88] CSV File Found and Header is valid...
+19/12/2014 3:37:54 AM [88] All vouchers Generated
+19/12/2014 3:37:54 AM [88] Zipping Vouchers...
+19/12/2014 3:37:55 AM Deleting Generated Vouchers outside zip file...
+19/12/2014 3:37:55 AM [88] Completed
+22/12/2014 11:11:23 PM 
+22/12/2014 11:11:23 PM [89] Start to Process Voucher Generation Request
+22/12/2014 11:11:23 PM [89] ID found
+22/12/2014 11:11:23 PM [89] CSV File Found and Header is valid...
+22/12/2014 11:12:15 PM [89] All vouchers Generated
+22/12/2014 11:12:16 PM [89] Zipping Vouchers...
+22/12/2014 11:12:22 PM Deleting Generated Vouchers outside zip file...
+22/12/2014 11:12:23 PM [89] Completed

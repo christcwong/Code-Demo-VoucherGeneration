@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.chinabarsignature.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.chinabarsignature.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.chinabarsignature.com/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="ProcessVoucherGenerationRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="intVoucherGenerationRequestId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="blnSendEmail" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="blnQROnly" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MyTestAsynchronousMethod">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="waitTime" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MyTestAsynchronousMethodResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MyTestAsynchronousMethodResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="ProcessVoucherGenerationRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcessVoucherGenerationRequest" />
+  </wsdl:message>
+  <wsdl:message name="MyTestAsynchronousMethodSoapIn">
+    <wsdl:part name="parameters" element="tns:MyTestAsynchronousMethod" />
+  </wsdl:message>
+  <wsdl:message name="MyTestAsynchronousMethodSoapOut">
+    <wsdl:part name="parameters" element="tns:MyTestAsynchronousMethodResponse" />
+  </wsdl:message>
+  <wsdl:portType name="VoucherWebServiceSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessVoucherGenerationRequest">
+      <wsdl:input message="tns:ProcessVoucherGenerationRequestSoapIn" />
+    </wsdl:operation>
+    <wsdl:operation name="MyTestAsynchronousMethod">
+      <wsdl:input message="tns:MyTestAsynchronousMethodSoapIn" />
+      <wsdl:output message="tns:MyTestAsynchronousMethodSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="VoucherWebServiceSoap" type="tns:VoucherWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://www.chinabarsignature.com/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessVoucherGenerationRequest">
+      <soap:operation soapAction="http://www.chinabarsignature.com/ProcessVoucherGenerationRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="MyTestAsynchronousMethod">
+      <soap:operation soapAction="http://www.chinabarsignature.com/MyTestAsynchronousMethod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="VoucherWebServiceSoap12" type="tns:VoucherWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://www.chinabarsignature.com/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessVoucherGenerationRequest">
+      <soap12:operation soapAction="http://www.chinabarsignature.com/ProcessVoucherGenerationRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="MyTestAsynchronousMethod">
+      <soap12:operation soapAction="http://www.chinabarsignature.com/MyTestAsynchronousMethod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VoucherWebService">
+    <wsdl:port name="VoucherWebServiceSoap" binding="tns:VoucherWebServiceSoap">
+      <soap:address location="http://www.chinabarsignature.com/VoucherWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="VoucherWebServiceSoap12" binding="tns:VoucherWebServiceSoap12">
+      <soap12:address location="http://www.chinabarsignature.com/VoucherWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,1421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ChinaBarDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ChinaBarDBModelStoreContainer">
+          <EntitySet Name="Activity" EntityType="ChinaBarDBModel.Store.Activity" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Application" EntityType="ChinaBarDBModel.Store.Application" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="AvailablePosition" EntityType="ChinaBarDBModel.Store.AvailablePosition" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Branch" EntityType="ChinaBarDBModel.Store.Branch" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Cuisine" EntityType="ChinaBarDBModel.Store.Cuisine" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Feedback" EntityType="ChinaBarDBModel.Store.Feedback" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="LandingBanner" EntityType="ChinaBarDBModel.Store.LandingBanner" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Menu" EntityType="ChinaBarDBModel.Store.Menu" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Mobile" EntityType="ChinaBarDBModel.Store.Mobile" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Reservation" EntityType="ChinaBarDBModel.Store.Reservation" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Session" EntityType="ChinaBarDBModel.Store.Session" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SocialDuty" EntityType="ChinaBarDBModel.Store.SocialDuty" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SpecialSession" EntityType="ChinaBarDBModel.Store.SpecialSession" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Subscribe" EntityType="ChinaBarDBModel.Store.Subscribe" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SubscribeType" EntityType="ChinaBarDBModel.Store.SubscribeType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Voucher" EntityType="ChinaBarDBModel.Store.Voucher" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="VoucherGenerationRequest" EntityType="ChinaBarDBModel.Store.VoucherGenerationRequest" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="VoucherType" EntityType="ChinaBarDBModel.Store.VoucherType" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Application_Branch" Association="ChinaBarDBModel.Store.FK_Application_Branch">
+            <End Role="Branch" EntitySet="Branch" />
+            <End Role="Application" EntitySet="Application" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AvailablePosition_Branch" Association="ChinaBarDBModel.Store.FK_AvailablePosition_Branch">
+            <End Role="Branch" EntitySet="Branch" />
+            <End Role="AvailablePosition" EntitySet="AvailablePosition" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Cuisine_Branch" Association="ChinaBarDBModel.Store.FK_Cuisine_Branch">
+            <End Role="Branch" EntitySet="Branch" />
+            <End Role="Cuisine" EntitySet="Cuisine" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Feedback_Branch" Association="ChinaBarDBModel.Store.FK_Feedback_Branch">
+            <End Role="Branch" EntitySet="Branch" />
+            <End Role="Feedback" EntitySet="Feedback" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Menu_Branch" Association="ChinaBarDBModel.Store.FK_Menu_Branch">
+            <End Role="Branch" EntitySet="Branch" />
+            <End Role="Menu" EntitySet="Menu" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Menu_Cuisine" Association="ChinaBarDBModel.Store.FK_Menu_Cuisine">
+            <End Role="Cuisine" EntitySet="Cuisine" />
+            <End Role="Menu" EntitySet="Menu" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Reservation_Branch" Association="ChinaBarDBModel.Store.FK_Reservation_Branch">
+            <End Role="Branch" EntitySet="Branch" />
+            <End Role="Reservation" EntitySet="Reservation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Reservation_VoucherType" Association="ChinaBarDBModel.Store.FK_Reservation_VoucherType">
+            <End Role="VoucherType" EntitySet="VoucherType" />
+            <End Role="Reservation" EntitySet="Reservation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Session_Branch" Association="ChinaBarDBModel.Store.FK_Session_Branch">
+            <End Role="Branch" EntitySet="Branch" />
+            <End Role="Session" EntitySet="Session" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SpecialSession_Branch" Association="ChinaBarDBModel.Store.FK_SpecialSession_Branch">
+            <End Role="Branch" EntitySet="Branch" />
+            <End Role="SpecialSession" EntitySet="SpecialSession" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Voucher_VoucherType" Association="ChinaBarDBModel.Store.FK_Voucher_VoucherType">
+            <End Role="VoucherType" EntitySet="VoucherType" />
+            <End Role="Voucher" EntitySet="Voucher" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VoucherType_Branch" Association="ChinaBarDBModel.Store.FK_VoucherType_Branch">
+            <End Role="Branch" EntitySet="Branch" />
+            <End Role="VoucherType" EntitySet="VoucherType" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Activity">
+          <Key>
+            <PropertyRef Name="ActivityID" />
+          </Key>
+          <Property Name="ActivityID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="Date" Type="date" />
+          <Property Name="Image" Type="nvarchar" MaxLength="50" />
+          <Property Name="Position" Type="int" />
+        </EntityType>
+        <EntityType Name="Application">
+          <Key>
+            <PropertyRef Name="ApplicationID" />
+          </Key>
+          <Property Name="ApplicationID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="DateReceive" Type="date" />
+          <Property Name="BranchID" Type="int" />
+          <Property Name="Position" Type="nvarchar(max)" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="Email" Type="nvarchar(max)" />
+          <Property Name="PersonalDetail" Type="nvarchar(max)" />
+          <Property Name="WorkStatus" Type="nvarchar(max)" />
+          <Property Name="LanguageSkill" Type="nvarchar(max)" />
+          <Property Name="Education" Type="nvarchar(max)" />
+          <Property Name="WorkExperience" Type="nvarchar(max)" />
+          <Property Name="Misc" Type="nvarchar(max)" />
+          <Property Name="Resume" Type="nvarchar(max)" />
+          <Property Name="Status" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="AvailablePosition">
+          <Key>
+            <PropertyRef Name="AvailablePositionID" />
+          </Key>
+          <Property Name="AvailablePositionID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="BranchID" Type="int" />
+          <Property Name="PositionName" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Branch">
+          <Key>
+            <PropertyRef Name="BranchID" />
+          </Key>
+          <Property Name="BranchID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="StreetNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="Street" Type="nvarchar" MaxLength="50" />
+          <Property Name="Suburb" Type="nvarchar" MaxLength="50" />
+          <Property Name="Postcode" Type="nchar" MaxLength="4" />
+          <Property Name="Image" Type="nvarchar" MaxLength="50" />
+          <Property Name="Telephone" Type="nvarchar" MaxLength="50" />
+          <Property Name="Mobile" Type="nvarchar" MaxLength="50" />
+          <Property Name="ReservationEmail" Type="nvarchar(max)" />
+          <Property Name="InfoEmail" Type="nvarchar(max)" />
+          <Property Name="PWUsername" Type="varchar" MaxLength="20" />
+          <Property Name="PWPWD" Type="varchar" MaxLength="20" />
+          <Property Name="PWBillerCode" Type="varchar" MaxLength="20" />
+          <Property Name="PWEncryptKey" Type="varchar" MaxLength="30" />
+          <Property Name="PWMerchantID" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Cuisine">
+          <Key>
+            <PropertyRef Name="CuisineID" />
+          </Key>
+          <Property Name="CuisineID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="BranchID" Type="int" />
+          <Property Name="Position" Type="int" />
+          <Property Name="Image" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Feedback">
+          <Key>
+            <PropertyRef Name="FeedbackID" />
+          </Key>
+          <Property Name="FeedbackID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="BranchID" Type="int" />
+          <Property Name="DateReceive" Type="date" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="Contact" Type="nvarchar(max)" />
+          <Property Name="Email" Type="nvarchar(max)" />
+          <Property Name="PersonalDetail" Type="nvarchar(max)" />
+          <Property Name="Survey" Type="nvarchar(max)" />
+          <Property Name="DineDetail" Type="nvarchar(max)" />
+          <Property Name="GeneralComment" Type="nvarchar(max)" />
+          <Property Name="HearFrom" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="LandingBanner">
+          <Key>
+            <PropertyRef Name="LandingBannerID" />
+          </Key>
+          <Property Name="LandingBannerID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Position" Type="int" />
+          <Property Name="Code" Type="nvarchar(max)" />
+          <Property Name="Publish" Type="bit" />
+        </EntityType>
+        <EntityType Name="Menu">
+          <Key>
+            <PropertyRef Name="MenuID" />
+          </Key>
+          <Property Name="MenuID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="CuisineID" Type="int" />
+          <Property Name="Image" Type="nvarchar" MaxLength="100" />
+          <Property Name="BranchID" Type="int" />
+          <Property Name="Position" Type="int" />
+        </EntityType>
+        <EntityType Name="Mobile">
+          <Key>
+            <PropertyRef Name="MobileID" />
+          </Key>
+          <Property Name="MobileID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Date" Type="date" />
+          <Property Name="MobileNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="Type" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Reservation">
+          <Key>
+            <PropertyRef Name="ReservationID" />
+          </Key>
+          <Property Name="ReservationID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="BranchID" Type="int" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" />
+          <Property Name="ContactType" Type="nvarchar" MaxLength="50" />
+          <Property Name="Contact" Type="nvarchar" MaxLength="50" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" />
+          <Property Name="Date" Type="datetime" />
+          <Property Name="ReserveDate" Type="date" />
+          <Property Name="ReserveSession" Type="nvarchar" MaxLength="200" />
+          <Property Name="ReserveSessionStartTime" Type="datetime" />
+          <Property Name="ReserveSessionEndTime" Type="datetime" />
+          <Property Name="Arrival" Type="nvarchar" MaxLength="100" />
+          <Property Name="Adult" Type="int" />
+          <Property Name="Assist" Type="bit" />
+          <Property Name="Kid1" Type="int" />
+          <Property Name="Kid2" Type="int" />
+          <Property Name="Arrange" Type="int" />
+          <Property Name="Pram" Type="int" />
+          <Property Name="Note" Type="nvarchar(max)" />
+          <Property Name="Sms" Type="bit" />
+          <Property Name="SmsSent" Type="bit" />
+          <Property Name="Status" Type="nvarchar" MaxLength="50" />
+          <Property Name="Type" Type="nvarchar" MaxLength="50" />
+          <Property Name="VoucherTypeID" Type="int" />
+          <Property Name="Cake" Type="varchar" MaxLength="50" />
+          <Property Name="Staff" Type="varchar" MaxLength="50" />
+          <Property Name="TableNO" Type="varchar" MaxLength="10" />
+          <Property Name="Deposit" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="DepositPaid" Type="bit" Nullable="false" />
+          <Property Name="PaymentMethod" Type="nvarchar" MaxLength="15" />
+          <Property Name="IsSent" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Session">
+          <Key>
+            <PropertyRef Name="SessionID" />
+          </Key>
+          <Property Name="SessionID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="BranchID" Type="int" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Date" Type="nvarchar" MaxLength="50" />
+          <Property Name="StartTime" Type="datetime" />
+          <Property Name="EndTime" Type="datetime" />
+          <Property Name="Price" Type="decimal" Scale="2" />
+          <Property Name="Position" Type="int" />
+        </EntityType>
+        <EntityType Name="SocialDuty">
+          <Key>
+            <PropertyRef Name="SocialDutyID" />
+          </Key>
+          <Property Name="SocialDutyID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="Date" Type="date" />
+          <Property Name="Image" Type="nvarchar" MaxLength="50" />
+          <Property Name="Position" Type="int" />
+        </EntityType>
+        <EntityType Name="SpecialSession">
+          <Key>
+            <PropertyRef Name="SpecialSessionID" />
+          </Key>
+          <Property Name="SpecialSessionID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="BranchID" Type="int" />
+          <Property Name="Date" Type="date" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="StartTime" Type="datetime" />
+          <Property Name="EndTime" Type="datetime" />
+          <Property Name="FullyBook" Type="bit" />
+          <Property Name="Holiday" Type="bit" />
+          <Property Name="Viewable" Type="bit" />
+          <Property Name="DepositRequired" Type="bit" Nullable="false" />
+          <Property Name="Price" Type="decimal" Nullable="false" Precision="10" Scale="2" />
+        </EntityType>
+        <EntityType Name="Subscribe">
+          <Key>
+            <PropertyRef Name="SubscribeID" />
+          </Key>
+          <Property Name="SubscribeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Date" Type="date" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" />
+          <Property Name="Email" Type="nvarchar(max)" />
+          <Property Name="Contact" Type="nvarchar(max)" />
+          <Property Name="Address" Type="nvarchar(max)" />
+          <Property Name="IsSubscribeEDM" Type="nvarchar" MaxLength="50" />
+          <Property Name="IsSubscribeSMS" Type="nvarchar" MaxLength="50" />
+          <Property Name="Suburb" Type="nvarchar(max)" />
+          <Property Name="Type" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="SubscribeType">
+          <Key>
+            <PropertyRef Name="SubscribeTypeID" />
+          </Key>
+          <Property Name="SubscribeTypeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="SubDescription" Type="varchar" MaxLength="255" />
+          <Property Name="Active" Type="bit" />
+        </EntityType>
+        <EntityType Name="Voucher">
+          <Key>
+            <PropertyRef Name="VoucherID" />
+          </Key>
+          <Property Name="VoucherID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="VoucherTypeID" Type="int" />
+          <Property Name="Code" Type="nvarchar(max)" />
+          <Property Name="CustomerName" Type="nvarchar(max)" />
+          <Property Name="Email" Type="nvarchar(max)" />
+          <Property Name="Contact" Type="nvarchar(max)" />
+          <Property Name="HumanValidate" Type="bit" />
+          <Property Name="Image" Type="nvarchar(max)" />
+          <Property Name="GenerateDate" Type="datetime" />
+          <Property Name="UseDate" Type="datetime" />
+          <Property Name="UseBranchID" Type="int" />
+          <Property Name="Status" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="VoucherGenerationRequest">
+          <Key>
+            <PropertyRef Name="VoucherGenerationRequestID" />
+          </Key>
+          <Property Name="VoucherGenerationRequestID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="VoucherTypeID" Type="int" />
+          <Property Name="Status" Type="varchar" MaxLength="200" />
+          <Property Name="CsvPath" Type="varchar" MaxLength="600" />
+          <Property Name="RequestCreateUTC" Type="datetime2" />
+          <Property Name="RequestStartUTC" Type="datetime2" />
+          <Property Name="LastModifyUTC" Type="datetime2" />
+          <Property Name="ZipFileLink" Type="varchar" MaxLength="600" />
+        </EntityType>
+        <EntityType Name="VoucherType">
+          <Key>
+            <PropertyRef Name="VoucherTypeID" />
+          </Key>
+          <Property Name="VoucherTypeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="BranchID" Type="int" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="PromoCode" Type="nvarchar(max)" />
+          <Property Name="Image" Type="nvarchar(max)" />
+          <Property Name="CodeXPosition" Type="int" />
+          <Property Name="CodeYPosition" Type="int" />
+          <Property Name="CreateDate" Type="date" />
+          <Property Name="StartDate" Type="date" />
+          <Property Name="ExpiryDate" Type="date" />
+          <Property Name="Status" Type="nvarchar" MaxLength="50" />
+          <Property Name="QRDimension" Type="int" />
+          <Property Name="MonUsable" Type="bit" />
+          <Property Name="TueUsable" Type="bit" />
+          <Property Name="WedUsable" Type="bit" />
+          <Property Name="ThuUsable" Type="bit" />
+          <Property Name="FriUsable" Type="bit" />
+          <Property Name="SatUsable" Type="bit" />
+          <Property Name="SunUsable" Type="bit" />
+        </EntityType>
+        <Association Name="FK_Application_Branch">
+          <End Role="Branch" Type="ChinaBarDBModel.Store.Branch" Multiplicity="0..1" />
+          <End Role="Application" Type="ChinaBarDBModel.Store.Application" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Branch">
+              <PropertyRef Name="BranchID" />
+            </Principal>
+            <Dependent Role="Application">
+              <PropertyRef Name="BranchID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AvailablePosition_Branch">
+          <End Role="Branch" Type="ChinaBarDBModel.Store.Branch" Multiplicity="0..1" />
+          <End Role="AvailablePosition" Type="ChinaBarDBModel.Store.AvailablePosition" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Branch">
+              <PropertyRef Name="BranchID" />
+            </Principal>
+            <Dependent Role="AvailablePosition">
+              <PropertyRef Name="BranchID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Cuisine_Branch">
+          <End Role="Branch" Type="ChinaBarDBModel.Store.Branch" Multiplicity="0..1" />
+          <End Role="Cuisine" Type="ChinaBarDBModel.Store.Cuisine" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Branch">
+              <PropertyRef Name="BranchID" />
+            </Principal>
+            <Dependent Role="Cuisine">
+              <PropertyRef Name="BranchID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Feedback_Branch">
+          <End Role="Branch" Type="ChinaBarDBModel.Store.Branch" Multiplicity="0..1" />
+          <End Role="Feedback" Type="ChinaBarDBModel.Store.Feedback" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Branch">
+              <PropertyRef Name="BranchID" />
+            </Principal>
+            <Dependent Role="Feedback">
+              <PropertyRef Name="BranchID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Menu_Branch">
+          <End Role="Branch" Type="ChinaBarDBModel.Store.Branch" Multiplicity="0..1" />
+          <End Role="Menu" Type="ChinaBarDBModel.Store.Menu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Branch">
+              <PropertyRef Name="BranchID" />
+            </Principal>
+            <Dependent Role="Menu">
+              <PropertyRef Name="BranchID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Menu_Cuisine">
+          <End Role="Cuisine" Type="ChinaBarDBModel.Store.Cuisine" Multiplicity="0..1" />
+          <End Role="Menu" Type="ChinaBarDBModel.Store.Menu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cuisine">
+              <PropertyRef Name="CuisineID" />
+            </Principal>
+            <Dependent Role="Menu">
+              <PropertyRef Name="CuisineID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Reservation_Branch">
+          <End Role="Branch" Type="ChinaBarDBModel.Store.Branch" Multiplicity="0..1" />
+          <End Role="Reservation" Type="ChinaBarDBModel.Store.Reservation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Branch">
+              <PropertyRef Name="BranchID" />
+            </Principal>
+            <Dependent Role="Reservation">
+              <PropertyRef Name="BranchID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Reservation_VoucherType">
+          <End Role="VoucherType" Type="ChinaBarDBModel.Store.VoucherType" Multiplicity="0..1" />
+          <End Role="Reservation" Type="ChinaBarDBModel.Store.Reservation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VoucherType">
+              <PropertyRef Name="VoucherTypeID" />
+            </Principal>
+            <Dependent Role="Reservation">
+              <PropertyRef Name="VoucherTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Session_Branch">
+          <End Role="Branch" Type="ChinaBarDBModel.Store.Branch" Multiplicity="0..1" />
+          <End Role="Session" Type="ChinaBarDBModel.Store.Session" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Branch">
+              <PropertyRef Name="BranchID" />
+            </Principal>
+            <Dependent Role="Session">
+              <PropertyRef Name="BranchID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SpecialSession_Branch">
+          <End Role="Branch" Type="ChinaBarDBModel.Store.Branch" Multiplicity="0..1" />
+          <End Role="SpecialSession" Type="ChinaBarDBModel.Store.SpecialSession" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Branch">
+              <PropertyRef Name="BranchID" />
+            </Principal>
+            <Dependent Role="SpecialSession">
+              <PropertyRef Name="BranchID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Voucher_VoucherType">
+          <End Role="VoucherType" Type="ChinaBarDBModel.Store.VoucherType" Multiplicity="0..1" />
+          <End Role="Voucher" Type="ChinaBarDBModel.Store.Voucher" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VoucherType">
+              <PropertyRef Name="VoucherTypeID" />
+            </Principal>
+            <Dependent Role="Voucher">
+              <PropertyRef Name="VoucherTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VoucherType_Branch">
+          <End Role="Branch" Type="ChinaBarDBModel.Store.Branch" Multiplicity="0..1" />
+          <End Role="VoucherType" Type="ChinaBarDBModel.Store.VoucherType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Branch">
+              <PropertyRef Name="BranchID" />
+            </Principal>
+            <Dependent Role="VoucherType">
+              <PropertyRef Name="BranchID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ChinaBarDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="ChinaBarDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Branches" EntityType="ChinaBarDBModel.Branch" />
+          <EntitySet Name="Reservations" EntityType="ChinaBarDBModel.Reservation" />
+          <AssociationSet Name="FK_Reservation_Branch" Association="ChinaBarDBModel.FK_Reservation_Branch">
+            <End Role="Branch" EntitySet="Branches" />
+            <End Role="Reservation" EntitySet="Reservations" />
+          </AssociationSet>
+          <EntitySet Name="Sessions" EntityType="ChinaBarDBModel.Session" />
+          <AssociationSet Name="FK_Session_Branch" Association="ChinaBarDBModel.FK_Session_Branch">
+            <End Role="Branch" EntitySet="Branches" />
+            <End Role="Session" EntitySet="Sessions" />
+          </AssociationSet>
+          <EntitySet Name="Subscribes" EntityType="ChinaBarDBModel.Subscribe" />
+          <EntitySet Name="Menus" EntityType="ChinaBarDBModel.Menu" />
+          <AssociationSet Name="FK_Menu_Branch" Association="ChinaBarDBModel.FK_Menu_Branch">
+            <End Role="Branch" EntitySet="Branches" />
+            <End Role="Menu" EntitySet="Menus" />
+          </AssociationSet>
+          <EntitySet Name="Cuisines" EntityType="ChinaBarDBModel.Cuisine" />
+          <AssociationSet Name="FK_Cuisine_Branch" Association="ChinaBarDBModel.FK_Cuisine_Branch">
+            <End Role="Branch" EntitySet="Branches" />
+            <End Role="Cuisine" EntitySet="Cuisines" />
+          </AssociationSet>
+          <EntitySet Name="Activities" EntityType="ChinaBarDBModel.Activity" />
+          <EntitySet Name="SocialDuties" EntityType="ChinaBarDBModel.SocialDuty" />
+          <EntitySet Name="Applications" EntityType="ChinaBarDBModel.Application" />
+          <EntitySet Name="AvailablePositions" EntityType="ChinaBarDBModel.AvailablePosition" />
+          <AssociationSet Name="FK_Application_Branch" Association="ChinaBarDBModel.FK_Application_Branch">
+            <End Role="Branch" EntitySet="Branches" />
+            <End Role="Application" EntitySet="Applications" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AvailablePosition_Branch" Association="ChinaBarDBModel.FK_AvailablePosition_Branch">
+            <End Role="Branch" EntitySet="Branches" />
+            <End Role="AvailablePosition" EntitySet="AvailablePositions" />
+          </AssociationSet>
+          <EntitySet Name="Feedbacks" EntityType="ChinaBarDBModel.Feedback" />
+          <AssociationSet Name="FK_Feedback_Branch" Association="ChinaBarDBModel.FK_Feedback_Branch">
+            <End Role="Branch" EntitySet="Branches" />
+            <End Role="Feedback" EntitySet="Feedbacks" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Menu_Cuisine" Association="ChinaBarDBModel.FK_Menu_Cuisine">
+            <End Role="Cuisine" EntitySet="Cuisines" />
+            <End Role="Menu" EntitySet="Menus" />
+          </AssociationSet>
+          <EntitySet Name="SpecialSessions" EntityType="ChinaBarDBModel.SpecialSession" />
+          <AssociationSet Name="FK_SpecialSession_Branch" Association="ChinaBarDBModel.FK_SpecialSession_Branch">
+            <End Role="Branch" EntitySet="Branches" />
+            <End Role="SpecialSession" EntitySet="SpecialSessions" />
+          </AssociationSet>
+          <EntitySet Name="LandingBanners" EntityType="ChinaBarDBModel.LandingBanner" />
+          <EntitySet Name="Vouchers" EntityType="ChinaBarDBModel.Voucher" />
+          <EntitySet Name="Mobiles" EntityType="ChinaBarDBModel.Mobile" />
+          <EntitySet Name="VoucherTypes" EntityType="ChinaBarDBModel.VoucherType" />
+          <AssociationSet Name="FK_VoucherType_Branch" Association="ChinaBarDBModel.FK_VoucherType_Branch">
+            <End Role="Branch" EntitySet="Branches" />
+            <End Role="VoucherType" EntitySet="VoucherTypes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Voucher_VoucherType" Association="ChinaBarDBModel.FK_Voucher_VoucherType">
+            <End Role="VoucherType" EntitySet="VoucherTypes" />
+            <End Role="Voucher" EntitySet="Vouchers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Reservation_VoucherType" Association="ChinaBarDBModel.FK_Reservation_VoucherType">
+            <End Role="VoucherType" EntitySet="VoucherTypes" />
+            <End Role="Reservation" EntitySet="Reservations" />
+          </AssociationSet>
+          <EntitySet Name="VoucherGenerationRequests" EntityType="ChinaBarDBModel.VoucherGenerationRequest" />
+          <AssociationSet Name="VoucherGenerationRequestVoucherType" Association="ChinaBarDBModel.VoucherGenerationRequestVoucherType">
+            <End Role="VoucherGenerationRequest" EntitySet="VoucherGenerationRequests" />
+            <End Role="VoucherType" EntitySet="VoucherTypes" />
+          </AssociationSet>
+          <EntitySet Name="SubscribeTypes" EntityType="ChinaBarDBModel.SubscribeType" />
+        </EntityContainer>
+        <EntityType Name="Branch">
+          <Key>
+            <PropertyRef Name="BranchID" />
+          </Key>
+          <Property Name="BranchID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="StreetNo" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Street" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Suburb" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Postcode" Type="String" MaxLength="4" Unicode="true" FixedLength="true" />
+          <Property Name="Image" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Reservations" Relationship="ChinaBarDBModel.FK_Reservation_Branch" FromRole="Branch" ToRole="Reservation" />
+          <NavigationProperty Name="Sessions" Relationship="ChinaBarDBModel.FK_Session_Branch" FromRole="Branch" ToRole="Session" />
+          <NavigationProperty Name="Menus" Relationship="ChinaBarDBModel.FK_Menu_Branch" FromRole="Branch" ToRole="Menu" />
+          <NavigationProperty Name="Cuisines" Relationship="ChinaBarDBModel.FK_Cuisine_Branch" FromRole="Branch" ToRole="Cuisine" />
+          <NavigationProperty Name="Applications" Relationship="ChinaBarDBModel.FK_Application_Branch" FromRole="Branch" ToRole="Application" />
+          <NavigationProperty Name="AvailablePositions" Relationship="ChinaBarDBModel.FK_AvailablePosition_Branch" FromRole="Branch" ToRole="AvailablePosition" />
+          <NavigationProperty Name="Feedbacks" Relationship="ChinaBarDBModel.FK_Feedback_Branch" FromRole="Branch" ToRole="Feedback" />
+          <Property Type="String" Name="Telephone" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Mobile" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="SpecialSessions" Relationship="ChinaBarDBModel.FK_SpecialSession_Branch" FromRole="Branch" ToRole="SpecialSession" />
+          <Property Type="String" Name="ReservationEmail" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="InfoEmail" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="VoucherTypes" Relationship="ChinaBarDBModel.FK_VoucherType_Branch" FromRole="Branch" ToRole="VoucherType" />
+          <Property Name="PWUsername" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="PWPWD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="PWBillerCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="PWEncryptKey" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="PWMerchantID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Reservation">
+          <Key>
+            <PropertyRef Name="ReservationID" />
+          </Key>
+          <Property Name="ReservationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BranchID" Type="Int32" />
+          <Property Name="Name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ContactType" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Contact" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Email" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
+          <Property Name="ReserveDate" Type="DateTime" Precision="0" />
+          <Property Name="ReserveSession" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Arrival" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Adult" Type="Int32" />
+          <Property Name="Assist" Type="Boolean" />
+          <Property Name="Kid1" Type="Int32" />
+          <Property Name="Kid2" Type="Int32" />
+          <Property Name="Arrange" Type="Int32" />
+          <Property Name="Status" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Type" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Branch" Relationship="ChinaBarDBModel.FK_Reservation_Branch" FromRole="Reservation" ToRole="Branch" />
+          <Property Type="Int32" Name="Pram" />
+          <Property Type="String" Name="Note" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="Sms" />
+          <Property Type="DateTime" Name="ReserveSessionStartTime" Precision="3" />
+          <Property Type="DateTime" Name="ReserveSessionEndTime" Precision="3" />
+          <Property Type="Boolean" Name="SmsSent" />
+          <Property Type="Int32" Name="VoucherTypeID" />
+          <NavigationProperty Name="VoucherType" Relationship="ChinaBarDBModel.FK_Reservation_VoucherType" FromRole="Reservation" ToRole="VoucherType" />
+          <Property Name="Cake" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Staff" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TableNO" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Deposit" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="DepositPaid" Type="Boolean" Nullable="false" />
+          <Property Type="String" Name="PaymentMethod" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="IsSent" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Reservation_Branch">
+          <End Type="ChinaBarDBModel.Branch" Role="Branch" Multiplicity="0..1" />
+          <End Type="ChinaBarDBModel.Reservation" Role="Reservation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Branch">
+              <PropertyRef Name="BranchID" />
+            </Principal>
+            <Dependent Role="Reservation">
+              <PropertyRef Name="BranchID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Session">
+          <Key>
+            <PropertyRef Name="SessionID" />
+          </Key>
+          <Property Type="Int32" Name="SessionID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="BranchID" />
+          <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Date" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="StartTime" Precision="3" />
+          <Property Type="DateTime" Name="EndTime" Precision="3" />
+          <Property Type="Decimal" Name="Price" Precision="18" Scale="2" />
+          <NavigationProperty Name="Branch" Relationship="ChinaBarDBModel.FK_Session_Branch" FromRole="Session" ToRole="Branch" />
+          <Property Type="Int32" Name="Position" />
+        </EntityType>
+        <Association Name="FK_Session_Branch">
+          <End Type="ChinaBarDBModel.Branch" Role="Branch" Multiplicity="0..1" />
+          <End Type="ChinaBarDBModel.Session" Role="Session" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Branch">
+              <PropertyRef Name="BranchID" />
+            </Principal>
+            <Dependent Role="Session">
+              <PropertyRef Name="BranchID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Subscribe">
+          <Key>
+            <PropertyRef Name="SubscribeID" />
+          </Key>
+          <Property Type="Int32" Name="SubscribeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Email" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Type" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Contact" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Address" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Suburb" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="Date" Precision="0" />
+          <Property Type="String" Name="IsSubscribeEDM" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="IsSubscribeSMS" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Menu">
+          <Key>
+            <PropertyRef Name="MenuID" />
+          </Key>
+          <Property Type="Int32" Name="MenuID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Image" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="BranchID" />
+          <NavigationProperty Name="Branch" Relationship="ChinaBarDBModel.FK_Menu_Branch" FromRole="Menu" ToRole="Branch" />
+          <Property Type="Int32" Name="CuisineID" />
+          <NavigationProperty Name="Cuisine" Relationship="ChinaBarDBModel.FK_Menu_Cuisine" FromRole="Menu" ToRole="Cuisine" />
+          <Property Type="Int32" Name="Position" />
+        </EntityType>
+        <Association Name="FK_Menu_Branch">
+          <End Type="ChinaBarDBModel.Branch" Role="Branch" Multiplicity="0..1" />
+          <End Type="ChinaBarDBModel.Menu" Role="Menu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Branch">
+              <PropertyRef Name="BranchID" />
+            </Principal>
+            <Dependent Role="Menu">
+              <PropertyRef Name="BranchID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Cuisine">
+          <Key>
+            <PropertyRef Name="CuisineID" />
+          </Key>
+          <Property Type="Int32" Name="CuisineID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="BranchID" />
+          <NavigationProperty Name="Branch" Relationship="ChinaBarDBModel.FK_Cuisine_Branch" FromRole="Cuisine" ToRole="Branch" />
+          <NavigationProperty Name="Menus" Relationship="ChinaBarDBModel.FK_Menu_Cuisine" FromRole="Cuisine" ToRole="Menu" />
+          <Property Type="Int32" Name="Position" />
+          <Property Type="String" Name="Image" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <Association Name="FK_Cuisine_Branch">
+          <End Type="ChinaBarDBModel.Branch" Role="Branch" Multiplicity="0..1" />
+          <End Type="ChinaBarDBModel.Cuisine" Role="Cuisine" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Branch">
+              <PropertyRef Name="BranchID" />
+            </Principal>
+            <Dependent Role="Cuisine">
+              <PropertyRef Name="BranchID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Activity">
+          <Key>
+            <PropertyRef Name="ActivityID" />
+          </Key>
+          <Property Type="Int32" Name="ActivityID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="Date" Precision="0" />
+          <Property Type="String" Name="Image" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="Position" />
+        </EntityType>
+        <EntityType Name="SocialDuty">
+          <Key>
+            <PropertyRef Name="SocialDutyID" />
+          </Key>
+          <Property Type="Int32" Name="SocialDutyID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="Date" Precision="0" />
+          <Property Type="String" Name="Image" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="Position" />
+        </EntityType>
+        <EntityType Name="Application">
+          <Key>
+            <PropertyRef Name="ApplicationID" />
+          </Key>
+          <Property Type="Int32" Name="ApplicationID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="DateTime" Name="DateReceive" Precision="0" />
+          <Property Type="Int32" Name="BranchID" />
+          <Property Type="String" Name="Position" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Name" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Email" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PersonalDetail" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="WorkStatus" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LanguageSkill" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Education" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="WorkExperience" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Misc" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Resume" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Status" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Branch" Relationship="ChinaBarDBModel.FK_Application_Branch" FromRole="Application" ToRole="Branch" />
+        </EntityType>
+        <EntityType Name="AvailablePosition">
+          <Key>
+            <PropertyRef Name="AvailablePositionID" />
+          </Key>
+          <Property Type="Int32" Name="AvailablePositionID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="BranchID" />
+          <Property Type="String" Name="PositionName" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Branch" Relationship="ChinaBarDBModel.FK_AvailablePosition_Branch" FromRole="AvailablePosition" ToRole="Branch" />
+        </EntityType>
+        <Association Name="FK_Application_Branch">
+          <End Type="ChinaBarDBModel.Branch" Role="Branch" Multiplicity="0..1" />
+          <End Type="ChinaBarDBModel.Application" Role="Application" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Branch">
+              <PropertyRef Name="BranchID" />
+            </Principal>
+            <Dependent Role="Application">
+              <PropertyRef Name="BranchID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AvailablePosition_Branch">
+          <End Type="ChinaBarDBModel.Branch" Role="Branch" Multiplicity="0..1" />
+          <End Type="ChinaBarDBModel.AvailablePosition" Role="AvailablePosition" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Branch">
+              <PropertyRef Name="BranchID" />
+            </Principal>
+            <Dependent Role="AvailablePosition">
+              <PropertyRef Name="BranchID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Feedback">
+          <Key>
+            <PropertyRef Name="FeedbackID" />
+          </Key>
+          <Property Type="Int32" Name="FeedbackID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="BranchID" />
+          <Property Type="DateTime" Name="DateReceive" Precision="0" />
+          <Property Type="String" Name="Name" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Contact" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Email" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Survey" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DineDetail" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="GeneralComment" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HearFrom" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Branch" Relationship="ChinaBarDBModel.FK_Feedback_Branch" FromRole="Feedback" ToRole="Branch" />
+          <Property Type="String" Name="PersonalDetail" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <Association Name="FK_Feedback_Branch">
+          <End Type="ChinaBarDBModel.Branch" Role="Branch" Multiplicity="0..1" />
+          <End Type="ChinaBarDBModel.Feedback" Role="Feedback" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Branch">
+              <PropertyRef Name="BranchID" />
+            </Principal>
+            <Dependent Role="Feedback">
+              <PropertyRef Name="BranchID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Menu_Cuisine">
+          <End Type="ChinaBarDBModel.Cuisine" Role="Cuisine" Multiplicity="0..1" />
+          <End Type="ChinaBarDBModel.Menu" Role="Menu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cuisine">
+              <PropertyRef Name="CuisineID" />
+            </Principal>
+            <Dependent Role="Menu">
+              <PropertyRef Name="CuisineID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="SpecialSession">
+          <Key>
+            <PropertyRef Name="SpecialSessionID" />
+          </Key>
+          <Property Type="Int32" Name="SpecialSessionID" Nullable="false" />
+          <Property Type="DateTime" Name="Date" Precision="0" />
+          <Property Type="DateTime" Name="StartTime" Precision="3" />
+          <Property Type="DateTime" Name="EndTime" Precision="3" />
+          <Property Type="Boolean" Name="FullyBook" />
+          <Property Type="Int32" Name="BranchID" />
+          <NavigationProperty Name="Branch" Relationship="ChinaBarDBModel.FK_SpecialSession_Branch" FromRole="SpecialSession" ToRole="Branch" />
+          <Property Type="String" Name="Name" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="Holiday" />
+          <Property Type="Boolean" Name="Viewable" />
+          <Property Name="DepositRequired" Type="Boolean" Nullable="false" />
+          <Property Name="Price" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+        </EntityType>
+        <Association Name="FK_SpecialSession_Branch">
+          <End Type="ChinaBarDBModel.Branch" Role="Branch" Multiplicity="0..1" />
+          <End Type="ChinaBarDBModel.SpecialSession" Role="SpecialSession" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Branch">
+              <PropertyRef Name="BranchID" />
+            </Principal>
+            <Dependent Role="SpecialSession">
+              <PropertyRef Name="BranchID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="LandingBanner">
+          <Key>
+            <PropertyRef Name="LandingBannerID" />
+          </Key>
+          <Property Type="Int32" Name="LandingBannerID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Code" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="Position" />
+          <Property Type="Boolean" Name="Publish" />
+        </EntityType>
+        <EntityType Name="Voucher">
+          <Key>
+            <PropertyRef Name="VoucherID" />
+          </Key>
+          <Property Type="String" Name="Code" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Email" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Contact" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="HumanValidate" />
+          <Property Type="String" Name="Image" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="GenerateDate" Precision="3" />
+          <Property Type="DateTime" Name="UseDate" Precision="3" />
+          <Property Type="String" Name="Status" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CustomerName" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="VoucherID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="VoucherTypeID" />
+          <NavigationProperty Name="VoucherType" Relationship="ChinaBarDBModel.FK_Voucher_VoucherType" FromRole="Voucher" ToRole="VoucherType" />
+          <Property Type="Int32" Name="UseBranchID" />
+        </EntityType>
+        <EntityType Name="Mobile">
+          <Key>
+            <PropertyRef Name="MobileID" />
+          </Key>
+          <Property Type="Int32" Name="MobileID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="MobileNumber" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Name" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="Date" Precision="0" />
+          <Property Type="String" Name="Type" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="VoucherType">
+          <Key>
+            <PropertyRef Name="VoucherTypeID" />
+          </Key>
+          <Property Type="Int32" Name="VoucherTypeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="BranchID" />
+          <Property Type="String" Name="Name" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Branch" Relationship="ChinaBarDBModel.FK_VoucherType_Branch" FromRole="VoucherType" ToRole="Branch" />
+          <Property Type="DateTime" Name="CreateDate" Precision="0" />
+          <NavigationProperty Name="Vouchers" Relationship="ChinaBarDBModel.FK_Voucher_VoucherType" FromRole="VoucherType" ToRole="Voucher" />
+          <Property Type="String" Name="Image" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="CodeXPosition" />
+          <Property Type="Int32" Name="CodeYPosition" />
+          <Property Type="DateTime" Name="StartDate" Precision="0" />
+          <Property Type="DateTime" Name="ExpiryDate" Precision="0" />
+          <Property Type="String" Name="Status" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PromoCode" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Reservations" Relationship="ChinaBarDBModel.FK_Reservation_VoucherType" FromRole="VoucherType" ToRole="Reservation" />
+          <Property Type="Int32" Name="QRDimension" />
+          <Property Type="Boolean" Name="MonUsable" />
+          <Property Type="Boolean" Name="TueUsable" />
+          <Property Type="Boolean" Name="WedUsable" />
+          <Property Type="Boolean" Name="ThuUsable" />
+          <Property Type="Boolean" Name="FriUsable" />
+          <Property Type="Boolean" Name="SatUsable" />
+          <Property Type="Boolean" Name="SunUsable" />
+        </EntityType>
+        <Association Name="FK_VoucherType_Branch">
+          <End Type="ChinaBarDBModel.Branch" Role="Branch" Multiplicity="0..1" />
+          <End Type="ChinaBarDBModel.VoucherType" Role="VoucherType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Branch">
+              <PropertyRef Name="BranchID" />
+            </Principal>
+            <Dependent Role="VoucherType">
+              <PropertyRef Name="BranchID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Voucher_VoucherType">
+          <End Type="ChinaBarDBModel.VoucherType" Role="VoucherType" Multiplicity="0..1" />
+          <End Type="ChinaBarDBModel.Voucher" Role="Voucher" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VoucherType">
+              <PropertyRef Name="VoucherTypeID" />
+            </Principal>
+            <Dependent Role="Voucher">
+              <PropertyRef Name="VoucherTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Reservation_VoucherType">
+          <End Type="ChinaBarDBModel.VoucherType" Role="VoucherType" Multiplicity="0..1" />
+          <End Type="ChinaBarDBModel.Reservation" Role="Reservation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VoucherType">
+              <PropertyRef Name="VoucherTypeID" />
+            </Principal>
+            <Dependent Role="Reservation">
+              <PropertyRef Name="VoucherTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="VoucherGenerationRequest">
+          <Key>
+            <PropertyRef Name="VoucherGenerationRequestID" />
+          </Key>
+          <Property Type="Int32" Name="VoucherGenerationRequestID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="VoucherTypeID" />
+          <Property Type="String" Name="Status" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CsvPath" MaxLength="600" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="RequestCreateUTC" Precision="7" />
+          <Property Type="DateTime" Name="RequestStartUTC" Precision="7" />
+          <Property Type="DateTime" Name="LastModifyUTC" Precision="7" />
+          <NavigationProperty Name="VoucherType" Relationship="ChinaBarDBModel.VoucherGenerationRequestVoucherType" FromRole="VoucherGenerationRequest" ToRole="VoucherType" />
+          <Property Type="String" Name="ZipFileLink" MaxLength="600" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="VoucherGenerationRequestVoucherType">
+          <End Type="ChinaBarDBModel.VoucherGenerationRequest" Role="VoucherGenerationRequest" Multiplicity="*" />
+          <End Type="ChinaBarDBModel.VoucherType" Role="VoucherType" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="VoucherType">
+              <PropertyRef Name="VoucherTypeID" />
+            </Principal>
+            <Dependent Role="VoucherGenerationRequest">
+              <PropertyRef Name="VoucherTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="SubscribeType">
+          <Key>
+            <PropertyRef Name="SubscribeTypeID" />
+          </Key>
+          <Property Name="SubscribeTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="SubDescription" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Active" Type="Boolean" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ChinaBarDBModelStoreContainer" CdmEntityContainer="ChinaBarDBEntities">
+          <EntitySetMapping Name="Branches"><EntityTypeMapping TypeName="ChinaBarDBModel.Branch"><MappingFragment StoreEntitySet="Branch">
+            <ScalarProperty Name="PWMerchantID" ColumnName="PWMerchantID" />
+                <ScalarProperty Name="PWEncryptKey" ColumnName="PWEncryptKey" />
+                <ScalarProperty Name="PWBillerCode" ColumnName="PWBillerCode" />
+                <ScalarProperty Name="PWPWD" ColumnName="PWPWD" />
+                <ScalarProperty Name="PWUsername" ColumnName="PWUsername" />
+                <ScalarProperty Name="InfoEmail" ColumnName="InfoEmail" />
+                <ScalarProperty Name="ReservationEmail" ColumnName="ReservationEmail" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+                <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="StreetNo" ColumnName="StreetNo" />
+            <ScalarProperty Name="Street" ColumnName="Street" />
+            <ScalarProperty Name="Suburb" ColumnName="Suburb" />
+            <ScalarProperty Name="Postcode" ColumnName="Postcode" />
+            <ScalarProperty Name="Image" ColumnName="Image" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Reservations"><EntityTypeMapping TypeName="ChinaBarDBModel.Reservation"><MappingFragment StoreEntitySet="Reservation">
+            <ScalarProperty Name="IsSent" ColumnName="IsSent" />
+                <ScalarProperty Name="PaymentMethod" ColumnName="PaymentMethod" />
+                <ScalarProperty Name="DepositPaid" ColumnName="DepositPaid" />
+                <ScalarProperty Name="Deposit" ColumnName="Deposit" />
+                <ScalarProperty Name="TableNO" ColumnName="TableNO" />
+                <ScalarProperty Name="Staff" ColumnName="Staff" />
+                <ScalarProperty Name="Cake" ColumnName="Cake" />
+                <ScalarProperty Name="VoucherTypeID" ColumnName="VoucherTypeID" />
+                <ScalarProperty Name="SmsSent" ColumnName="SmsSent" />
+                <ScalarProperty Name="ReserveSessionEndTime" ColumnName="ReserveSessionEndTime" />
+                <ScalarProperty Name="ReserveSessionStartTime" ColumnName="ReserveSessionStartTime" />
+                <ScalarProperty Name="Sms" ColumnName="Sms" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="Pram" ColumnName="Pram" />
+                <ScalarProperty Name="ReservationID" ColumnName="ReservationID" />
+            <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="ContactType" ColumnName="ContactType" />
+            <ScalarProperty Name="Contact" ColumnName="Contact" />
+            <ScalarProperty Name="Email" ColumnName="Email" />
+            <ScalarProperty Name="Date" ColumnName="Date" />
+            <ScalarProperty Name="ReserveDate" ColumnName="ReserveDate" />
+            <ScalarProperty Name="ReserveSession" ColumnName="ReserveSession" />
+            <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+            <ScalarProperty Name="Adult" ColumnName="Adult" />
+            <ScalarProperty Name="Assist" ColumnName="Assist" />
+            <ScalarProperty Name="Kid1" ColumnName="Kid1" />
+            <ScalarProperty Name="Kid2" ColumnName="Kid2" />
+            <ScalarProperty Name="Arrange" ColumnName="Arrange" />
+            <ScalarProperty Name="Status" ColumnName="Status" />
+            <ScalarProperty Name="Type" ColumnName="Type" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Sessions">
+            <EntityTypeMapping TypeName="ChinaBarDBModel.Session">
+              <MappingFragment StoreEntitySet="Session">
+                <ScalarProperty Name="Position" ColumnName="Position" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+                <ScalarProperty Name="SessionID" ColumnName="SessionID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Subscribes">
+            <EntityTypeMapping TypeName="ChinaBarDBModel.Subscribe">
+              <MappingFragment StoreEntitySet="Subscribe">
+                <ScalarProperty Name="IsSubscribeSMS" ColumnName="IsSubscribeSMS" />
+                <ScalarProperty Name="IsSubscribeEDM" ColumnName="IsSubscribeEDM" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Suburb" ColumnName="Suburb" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Contact" ColumnName="Contact" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="SubscribeID" ColumnName="SubscribeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Menus">
+            <EntityTypeMapping TypeName="ChinaBarDBModel.Menu">
+              <MappingFragment StoreEntitySet="Menu">
+                <ScalarProperty Name="Position" ColumnName="Position" />
+                <ScalarProperty Name="CuisineID" ColumnName="CuisineID" />
+                <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="MenuID" ColumnName="MenuID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Cuisines">
+            <EntityTypeMapping TypeName="ChinaBarDBModel.Cuisine">
+              <MappingFragment StoreEntitySet="Cuisine">
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="Position" ColumnName="Position" />
+                <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="CuisineID" ColumnName="CuisineID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Activities">
+            <EntityTypeMapping TypeName="ChinaBarDBModel.Activity">
+              <MappingFragment StoreEntitySet="Activity">
+                <ScalarProperty Name="Position" ColumnName="Position" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ActivityID" ColumnName="ActivityID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SocialDuties">
+            <EntityTypeMapping TypeName="ChinaBarDBModel.SocialDuty">
+              <MappingFragment StoreEntitySet="SocialDuty">
+                <ScalarProperty Name="Position" ColumnName="Position" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="SocialDutyID" ColumnName="SocialDutyID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Applications">
+            <EntityTypeMapping TypeName="ChinaBarDBModel.Application">
+              <MappingFragment StoreEntitySet="Application">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Resume" ColumnName="Resume" />
+                <ScalarProperty Name="Misc" ColumnName="Misc" />
+                <ScalarProperty Name="WorkExperience" ColumnName="WorkExperience" />
+                <ScalarProperty Name="Education" ColumnName="Education" />
+                <ScalarProperty Name="LanguageSkill" ColumnName="LanguageSkill" />
+                <ScalarProperty Name="WorkStatus" ColumnName="WorkStatus" />
+                <ScalarProperty Name="PersonalDetail" ColumnName="PersonalDetail" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Position" ColumnName="Position" />
+                <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+                <ScalarProperty Name="DateReceive" ColumnName="DateReceive" />
+                <ScalarProperty Name="ApplicationID" ColumnName="ApplicationID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AvailablePositions">
+            <EntityTypeMapping TypeName="ChinaBarDBModel.AvailablePosition">
+              <MappingFragment StoreEntitySet="AvailablePosition">
+                <ScalarProperty Name="PositionName" ColumnName="PositionName" />
+                <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+                <ScalarProperty Name="AvailablePositionID" ColumnName="AvailablePositionID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Feedbacks">
+            <EntityTypeMapping TypeName="ChinaBarDBModel.Feedback">
+              <MappingFragment StoreEntitySet="Feedback">
+                <ScalarProperty Name="PersonalDetail" ColumnName="PersonalDetail" />
+                <ScalarProperty Name="HearFrom" ColumnName="HearFrom" />
+                <ScalarProperty Name="GeneralComment" ColumnName="GeneralComment" />
+                <ScalarProperty Name="DineDetail" ColumnName="DineDetail" />
+                <ScalarProperty Name="Survey" ColumnName="Survey" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Contact" ColumnName="Contact" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="DateReceive" ColumnName="DateReceive" />
+                <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+                <ScalarProperty Name="FeedbackID" ColumnName="FeedbackID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SpecialSessions">
+            <EntityTypeMapping TypeName="ChinaBarDBModel.SpecialSession">
+              <MappingFragment StoreEntitySet="SpecialSession">
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="DepositRequired" ColumnName="DepositRequired" />
+                <ScalarProperty Name="Viewable" ColumnName="Viewable" />
+                <ScalarProperty Name="Holiday" ColumnName="Holiday" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+                <ScalarProperty Name="FullyBook" ColumnName="FullyBook" />
+                <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="SpecialSessionID" ColumnName="SpecialSessionID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LandingBanners">
+            <EntityTypeMapping TypeName="ChinaBarDBModel.LandingBanner">
+              <MappingFragment StoreEntitySet="LandingBanner">
+                <ScalarProperty Name="Publish" ColumnName="Publish" />
+                <ScalarProperty Name="Position" ColumnName="Position" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="LandingBannerID" ColumnName="LandingBannerID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Vouchers">
+            <EntityTypeMapping TypeName="ChinaBarDBModel.Voucher">
+              <MappingFragment StoreEntitySet="Voucher">
+                <ScalarProperty Name="UseBranchID" ColumnName="UseBranchID" />
+                <ScalarProperty Name="VoucherTypeID" ColumnName="VoucherTypeID" />
+                <ScalarProperty Name="VoucherID" ColumnName="VoucherID" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="UseDate" ColumnName="UseDate" />
+                <ScalarProperty Name="GenerateDate" ColumnName="GenerateDate" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="HumanValidate" ColumnName="HumanValidate" />
+                <ScalarProperty Name="Contact" ColumnName="Contact" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Mobiles">
+            <EntityTypeMapping TypeName="ChinaBarDBModel.Mobile">
+              <MappingFragment StoreEntitySet="Mobile">
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+                <ScalarProperty Name="MobileID" ColumnName="MobileID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VoucherTypes">
+            <EntityTypeMapping TypeName="ChinaBarDBModel.VoucherType">
+              <MappingFragment StoreEntitySet="VoucherType">
+                <ScalarProperty Name="SunUsable" ColumnName="SunUsable" />
+                <ScalarProperty Name="SatUsable" ColumnName="SatUsable" />
+                <ScalarProperty Name="FriUsable" ColumnName="FriUsable" />
+                <ScalarProperty Name="ThuUsable" ColumnName="ThuUsable" />
+                <ScalarProperty Name="WedUsable" ColumnName="WedUsable" />
+                <ScalarProperty Name="TueUsable" ColumnName="TueUsable" />
+                <ScalarProperty Name="MonUsable" ColumnName="MonUsable" />
+                <ScalarProperty Name="QRDimension" ColumnName="QRDimension" />
+                <ScalarProperty Name="PromoCode" ColumnName="PromoCode" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="ExpiryDate" ColumnName="ExpiryDate" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="CodeYPosition" ColumnName="CodeYPosition" />
+                <ScalarProperty Name="CodeXPosition" ColumnName="CodeXPosition" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+                <ScalarProperty Name="VoucherTypeID" ColumnName="VoucherTypeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VoucherGenerationRequests">
+            <EntityTypeMapping TypeName="ChinaBarDBModel.VoucherGenerationRequest">
+              <MappingFragment StoreEntitySet="VoucherGenerationRequest">
+                <ScalarProperty Name="ZipFileLink" ColumnName="ZipFileLink" />
+                <ScalarProperty Name="LastModifyUTC" ColumnName="LastModifyUTC" />
+                <ScalarProperty Name="RequestStartUTC" ColumnName="RequestStartUTC" />
+                <ScalarProperty Name="RequestCreateUTC" ColumnName="RequestCreateUTC" />
+                <ScalarProperty Name="CsvPath" ColumnName="CsvPath" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="VoucherTypeID" ColumnName="VoucherTypeID" />
+                <ScalarProperty Name="VoucherGenerationRequestID" ColumnName="VoucherGenerationRequestID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SubscribeTypes">
+            <EntityTypeMapping TypeName="ChinaBarDBModel.SubscribeType">
+              <MappingFragment StoreEntitySet="SubscribeType">
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="SubDescription" ColumnName="SubDescription" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="SubscribeTypeID" ColumnName="SubscribeTypeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="UseLegacyProvider" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="ChinaBarModel" ZoomLevel="93">
+        <EntityTypeShape EntityType="ChinaBarDBModel.Branch" Width="1.5" PointX="3.125" PointY="0.875" Height="2.5571907552083331" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChinaBarDBModel.Reservation" Width="1.5" PointX="5.625" PointY="0.75" Height="4.8648079427083326" IsExpanded="true" />
+        <AssociationConnector Association="ChinaBarDBModel.FK_Reservation_Branch" >
+          <ConnectorPoint PointX="4.625" PointY="2.0287019856770834" />
+          <ConnectorPoint PointX="5.625" PointY="2.0287019856770834" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="ChinaBarDBModel.Session" Width="1.5" PointX="0.625" PointY="1" Height="2.5571907552083317" />
+        <AssociationConnector Association="ChinaBarDBModel.FK_Session_Branch" >
+          <ConnectorPoint PointX="3.125" PointY="2.2785953776041659" />
+          <ConnectorPoint PointX="2" PointY="2.2785953776041659" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="ChinaBarDBModel.Subscribe" Width="1.5" PointX="8.25" PointY="2.375" Height="2.9417936197916656" />
+        <EntityTypeShape EntityType="ChinaBarDBModel.Menu" Width="1.5" PointX="5.875" PointY="8" Height="2.1725878906249996" />
+        <AssociationConnector Association="ChinaBarDBModel.FK_Menu_Branch" >
+          <ConnectorPoint PointX="4.625" PointY="3.3074039713541667" />
+          <ConnectorPoint PointX="5.25" PointY="3.3074039713541667" />
+          <ConnectorPoint PointX="5.25" PointY="6.2785953776041659" />
+          <ConnectorPoint PointX="5" PointY="6.2785953776041659" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="ChinaBarDBModel.Cuisine" Width="1.5" PointX="0.75" PointY="4.5" Height="1.9802864583333317" />
+        <AssociationConnector Association="ChinaBarDBModel.FK_Cuisine_Branch" >
+          <ConnectorPoint PointX="3.125" PointY="5.1199039713541667" />
+          <ConnectorPoint PointX="2.25" PointY="5.1199039713541667" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="ChinaBarDBModel.Activity" Width="1.5" PointX="10.375" PointY="3.375" Height="1.9802864583333317" />
+        <EntityTypeShape EntityType="ChinaBarDBModel.SocialDuty" Width="1.5" PointX="10.625" PointY="0.875" Height="1.9802864583333317" />
+        <EntityTypeShape EntityType="ChinaBarDBModel.Application" Width="1.5" PointX="10.5" PointY="8.625" Height="3.9033007812499996" />
+        <EntityTypeShape EntityType="ChinaBarDBModel.AvailablePosition" Width="1.5" PointX="4.625" PointY="11.625" Height="1.7879850260416674" />
+        <AssociationConnector Association="ChinaBarDBModel.FK_Application_Branch" >
+          <ConnectorPoint PointX="3.2932139453125" PointY="5.7398079427083326" />
+          <ConnectorPoint PointX="3.2932139453125" PointY="10.521172281901041" />
+          <ConnectorPoint PointX="3.3097367447916661" PointY="10.521172281901041" />
+          <ConnectorPoint PointX="3.4764034114583331" PointY="10.521172281901041" />
+          <ConnectorPoint PointX="5.375" PointY="10.521172281901041" />
+        </AssociationConnector>
+        <AssociationConnector Association="ChinaBarDBModel.FK_AvailablePosition_Branch" >
+          <ConnectorPoint PointX="3.1621053125000005" PointY="5.7398079427083326" />
+          <ConnectorPoint PointX="3.1621053125000005" PointY="13.518992513020834" />
+          <ConnectorPoint PointX="3.3281676627604164" PointY="13.518992513020834" />
+          <ConnectorPoint PointX="3.4948343294270834" PointY="13.518992513020834" />
+          <ConnectorPoint PointX="5.375" PointY="13.518992513020834" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="ChinaBarDBModel.Feedback" Width="1.5" PointX="12.875" PointY="4.875" Height="3.3263964843749996" />
+        <AssociationConnector Association="ChinaBarDBModel.FK_Feedback_Branch" >
+          <ConnectorPoint PointX="3.299312578125" PointY="5.7398079427083326" />
+          <ConnectorPoint PointX="3.299312578125" PointY="7.7785953776041659" />
+          <ConnectorPoint PointX="3.3097367447916661" PointY="7.778595377604165" />
+          <ConnectorPoint PointX="3.4764034114583331" PointY="7.7785953776041659" />
+          <ConnectorPoint PointX="7.041666666666667" PointY="7.778595377604165" />
+          <ConnectorPoint PointX="7.208333333333333" PointY="7.7785953776041659" />
+          <ConnectorPoint PointX="8.5" PointY="7.7785953776041659" />
+        </AssociationConnector>
+        <AssociationConnector Association="ChinaBarDBModel.FK_Menu_Cuisine" >
+          <ConnectorPoint PointX="2.25" PointY="6.4297493489583326" />
+          <ConnectorPoint PointX="3.0975704557291666" PointY="6.4297493489583317" />
+          <ConnectorPoint PointX="3.4764034114583326" PointY="6.4297493489583326" />
+          <ConnectorPoint PointX="3.5" PointY="6.4297493489583326" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="ChinaBarDBModel.SpecialSession" Width="1.5" PointX="0.75" PointY="7.75" Height="2.5571907552083317" />
+        <AssociationConnector Association="ChinaBarDBModel.FK_SpecialSession_Branch" >
+          <ConnectorPoint PointX="3.1933578125000004" PointY="5.7398079427083326" />
+          <ConnectorPoint PointX="3.1933578125000004" PointY="9.1390437825520827" />
+          <ConnectorPoint PointX="2.25" PointY="9.1390437825520827" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="ChinaBarDBModel.LandingBanner" Width="1.5" PointX="7.375" PointY="10.75" Height="1.4033821614583388" />
+        <EntityTypeShape EntityType="ChinaBarDBModel.Voucher" Width="1.5" PointX="15.125" PointY="8.5" Height="3.5186979166666656" />
+        <EntityTypeShape EntityType="ChinaBarDBModel.Mobile" Width="1.5" PointX="0.75" PointY="11.75" Height="1.4033821614583388" />
+        <EntityTypeShape EntityType="ChinaBarDBModel.VoucherType" Width="1.5" PointX="8.625" PointY="13.125" Height="3.7109993489583353" />
+        <AssociationConnector Association="ChinaBarDBModel.FK_VoucherType_Branch" >
+          <ConnectorPoint PointX="3.3930700781249996" PointY="5.7398079427083326" />
+          <ConnectorPoint PointX="3.3930700781249996" PointY="17.201650390625" />
+          <ConnectorPoint PointX="5.375" PointY="17.201650390625" />
+        </AssociationConnector>
+        <AssociationConnector Association="ChinaBarDBModel.FK_Voucher_VoucherType" >
+          <ConnectorPoint PointX="6.875" PointY="17.201650390625" />
+          <ConnectorPoint PointX="10.125" PointY="17.201650390625" />
+          <ConnectorPoint PointX="10.125" PointY="14.268697916666666" />
+        </AssociationConnector>
+        <AssociationConnector Association="ChinaBarDBModel.FK_Reservation_VoucherType" >
+          <ConnectorPoint PointX="6.125" PointY="15.25" />
+          <ConnectorPoint PointX="6.125" PointY="14.662985026041667" />
+          <ConnectorPoint PointX="7.125" PointY="14.662985026041667" />
+          <ConnectorPoint PointX="7.125" PointY="7.0186165364583317" />
+          <ConnectorPoint PointX="7.375" PointY="7.0186165364583317" />
+          <ConnectorPoint PointX="7.375" PointY="3.7593082682291663" />
+          <ConnectorPoint PointX="7.125" PointY="3.7593082682291663" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="ChinaBarDBModel.VoucherGenerationRequest" Width="1.5" PointX="14.125" PointY="14.5" />
+        <AssociationConnector Association="ChinaBarDBModel.VoucherGenerationRequestVoucherType" />
+        <EntityTypeShape EntityType="ChinaBarDBModel.SubscribeType" Width="1.5" PointX="12.875" PointY="0.875" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
